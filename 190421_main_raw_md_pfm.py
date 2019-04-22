@@ -43,6 +43,8 @@ feature_extract = str2bool(args.pretrained)
 #########################################################
 
 num_classes = 1000
+loader_image_path='/scratch/by783/DL_Final/ssl_data_96'
+loader_batch_size=64
 
 # Flag for feature extracting. When False, we finetune the whole model,
 #   when True we only update the reshaped layer params
