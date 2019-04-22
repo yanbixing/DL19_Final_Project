@@ -34,20 +34,20 @@ parser.add_argument("--pretrained", type=str, default='True',
 
 args = parser.parse_args()
 
-#########################################################
+####################### input params ##################################
 save_path='../DL_Final_Project_Models/'+args.save
 model_name=args.model
 num_epochs = args.epochs
 feature_extract = str2bool(args.pretrained)
-
-#########################################################
+# Flag for feature extracting. When False, we finetune the whole model,
+#   when True we only update the reshaped layer params
+###################### fixed_params ###################################
 
 num_classes = 1000
 loader_image_path='/scratch/by783/DL_Final/ssl_data_96'
 loader_batch_size=64
 
-# Flag for feature extracting. When False, we finetune the whole model,
-#   when True we only update the reshaped layer params
+
 
 
 print("PyTorch Version: ",torch.__version__)
@@ -270,16 +270,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
 
 
 
-
-
-
-####### load data
-
-dataloaders={}
-
-dataloaders['train'], dataloaders['val'], data_loader_unsup, class_to_idx_dict = image_loader(loader_image_path,loader_batch_size)
-
-#######
+####### make sure model and input size
 
 model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained=True)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -287,6 +278,15 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model_ft = model_ft.to(device)
 
 ########
+
+
+####### load data, input_size is used ####
+
+dataloaders={}
+
+dataloaders['train'], dataloaders['val'], data_loader_unsup, class_to_idx_dict = image_loader(loader_image_path,loader_batch_size)
+
+######
 
 # Gather the parameters to be optimized/updated in this run. If we are
 #  finetuning we will be updating all parameters. However, if we are
