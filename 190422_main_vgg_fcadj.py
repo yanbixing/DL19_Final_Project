@@ -51,8 +51,8 @@ loader_batch_size=64
 
 
 
-sys.stdout.write("PyTorch Version: ",torch.__version__)
-sys.stdout.write("Torchvision Version: ",torchvision.__version__)
+sys.stdout.write("PyTorch Version: {}".format(torch.__version__))
+sys.stdout.write("Torchvision Version: ".format(torchvision.__version__))
 
 if torch.cuda.is_available():
     sys.stdout.write('GPU mode')
@@ -263,11 +263,11 @@ if feature_extract:
     for name,param in model_ft.named_parameters():
         if param.requires_grad == True:
             params_to_update.append(param)
-            sys.stdout.write("\t",name)
+            sys.stdout.write("\t{}".format(name))
 else:
     for name,param in model_ft.named_parameters():
         if param.requires_grad == True:
-            sys.stdout.write("\t",name)
+            sys.stdout.write("\t{}".format(name))
 
 # Observe that all parameters are being optimized
 optimizer_ft = optim.SGD(params_to_update, lr=0.001, momentum=0.9)
