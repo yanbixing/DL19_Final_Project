@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=14
-#SBATCH --mem=32GB
+#SBATCH --mem=24GB
 #SBATCH --time=72:00:00
 
 module purge
