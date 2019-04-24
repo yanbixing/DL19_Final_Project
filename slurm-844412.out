@@ -1,0 +1,113 @@
+begin_raw_vgg_model
+PyTorch Version:  0.4.1
+Torchvision Version:  0.2.2
+GPU mode
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	 classifier.6.weight
+	 classifier.6.bias
+Begin to train
+Epoch 0/19
+----------
+train Loss: 6.2445 Acc: 0.0741
+val Loss: 5.4547 Acc: 0.2332
+
+Epoch 1/19
+----------
+train Loss: 4.9709 Acc: 0.2312
+val Loss: 4.4698 Acc: 0.3106
+
+Epoch 2/19
+----------
+train Loss: 4.1633 Acc: 0.3123
+val Loss: 3.8717 Acc: 0.3510
+
+Epoch 3/19
+----------
+train Loss: 3.6618 Acc: 0.3606
+val Loss: 3.5168 Acc: 0.3724
+
+Epoch 4/19
+----------
+train Loss: 3.3346 Acc: 0.3904
+val Loss: 3.2709 Acc: 0.3850
+
+Epoch 5/19
+----------
+train Loss: 3.1058 Acc: 0.4082
+val Loss: 3.0949 Acc: 0.3949
+
+Epoch 6/19
+----------
+train Loss: 2.9342 Acc: 0.4242
+val Loss: 2.9747 Acc: 0.3999
+
+Epoch 7/19
+----------
+train Loss: 2.8151 Acc: 0.4318
+val Loss: 2.8856 Acc: 0.4055
+
+Epoch 8/19
+----------
+train Loss: 2.7088 Acc: 0.4441
+val Loss: 2.8170 Acc: 0.4071
+
+Epoch 9/19
+----------
+train Loss: 2.6208 Acc: 0.4526
+val Loss: 2.7627 Acc: 0.4104
+
+Epoch 10/19
+----------
+train Loss: 2.5503 Acc: 0.4612
+val Loss: 2.7170 Acc: 0.4120
+
+Epoch 11/19
+----------
+train Loss: 2.4914 Acc: 0.4647
+val Loss: 2.6781 Acc: 0.4163
+
+Epoch 12/19
+----------
+train Loss: 2.4342 Acc: 0.4720
+val Loss: 2.6463 Acc: 0.4160
+
+Epoch 13/19
+----------
+train Loss: 2.3832 Acc: 0.4805
+val Loss: 2.6222 Acc: 0.4176
+
+Epoch 14/19
+----------
+train Loss: 2.3379 Acc: 0.4857
+val Loss: 2.5959 Acc: 0.4191
+
+Epoch 15/19
+----------
+train Loss: 2.3051 Acc: 0.4893
+val Loss: 2.5740 Acc: 0.4200
+
+Epoch 16/19
+----------
+train Loss: 2.2681 Acc: 0.4932
+val Loss: 2.5649 Acc: 0.4218
+
+Epoch 17/19
+----------
+train Loss: 2.2341 Acc: 0.4998
+val Loss: 2.5437 Acc: 0.4220
+
+Epoch 18/19
+----------
+train Loss: 2.2027 Acc: 0.5040
+val Loss: 2.5307 Acc: 0.4233
+
+Epoch 19/19
+----------
+train Loss: 2.1723 Acc: 0.5056
+val Loss: 2.5160 Acc: 0.4245
+
+Training complete in 1138m 45s
+Best val Acc: 0.424484
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
