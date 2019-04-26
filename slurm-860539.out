@@ -1,1 +1,187 @@
 begin_vgg_fcadj_model
+PyTorch Version: 0.4.1Torchvision Version: GPU modeBegin to load data...sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	classifier.0.weight	classifier.0.bias	classifier.3.weight	classifier.3.bias	classifier.6.weight	classifier.6.biasBegin to train...Epoch 0/59
+----------
+train Loss: 6.9017 Acc: 0.0011training time: 1359sval Loss: 6.8866 Acc: 0.0047training time: 2682s
+Epoch 1/59
+----------
+train Loss: 6.8733 Acc: 0.0031training time: 4072sval Loss: 6.8454 Acc: 0.0020training time: 5330s
+Epoch 2/59
+----------
+train Loss: 6.8174 Acc: 0.0024training time: 6768sval Loss: 6.7549 Acc: 0.0027training time: 8113s
+Epoch 3/59
+----------
+train Loss: 6.6921 Acc: 0.0083training time: 9399sval Loss: 6.5436 Acc: 0.0174training time: 10590s
+Epoch 4/59
+----------
+train Loss: 6.4098 Acc: 0.0190training time: 11889sval Loss: 6.1469 Acc: 0.0388training time: 13118s
+Epoch 5/59
+----------
+train Loss: 5.9586 Acc: 0.0326training time: 14388sval Loss: 5.6031 Acc: 0.0525training time: 15559s
+Epoch 6/59
+----------
+train Loss: 5.4550 Acc: 0.0514training time: 16823sval Loss: 5.1176 Acc: 0.0803training time: 18029s
+Epoch 7/59
+----------
+train Loss: 5.0491 Acc: 0.0735training time: 19291sval Loss: 4.7608 Acc: 0.1170training time: 20465s
+Epoch 8/59
+----------
+train Loss: 4.7325 Acc: 0.0986training time: 21716sval Loss: 4.4861 Acc: 0.1370training time: 22871s
+Epoch 9/59
+----------
+train Loss: 4.4745 Acc: 0.1239training time: 24163sval Loss: 4.2639 Acc: 0.1658training time: 25413s
+Epoch 10/59
+----------
+train Loss: 4.2554 Acc: 0.1487training time: 26709sval Loss: 4.0932 Acc: 0.1819training time: 27891s
+Epoch 11/59
+----------
+train Loss: 4.0667 Acc: 0.1726training time: 29132sval Loss: 3.9483 Acc: 0.2025training time: 30304s
+Epoch 12/59
+----------
+train Loss: 3.9081 Acc: 0.1929training time: 31579sval Loss: 3.8278 Acc: 0.2192training time: 32760s
+Epoch 13/59
+----------
+train Loss: 3.7714 Acc: 0.2129training time: 34063sval Loss: 3.7202 Acc: 0.2270training time: 35422s
+Epoch 14/59
+----------
+train Loss: 3.6479 Acc: 0.2301training time: 36882sval Loss: 3.6367 Acc: 0.2421training time: 38338s
+Epoch 15/59
+----------
+train Loss: 3.5320 Acc: 0.2475training time: 39847sval Loss: 3.5437 Acc: 0.2539training time: 41359s
+Epoch 16/59
+----------
+train Loss: 3.4362 Acc: 0.2626training time: 43004sval Loss: 3.4895 Acc: 0.2618training time: 44521s
+Epoch 17/59
+----------
+train Loss: 3.3474 Acc: 0.2727training time: 45946sval Loss: 3.4374 Acc: 0.2687training time: 47428s
+Epoch 18/59
+----------
+train Loss: 3.2646 Acc: 0.2875training time: 49007sval Loss: 3.3702 Acc: 0.2784training time: 50380s
+Epoch 19/59
+----------
+train Loss: 3.1863 Acc: 0.2985training time: 51746sval Loss: 3.3335 Acc: 0.2834training time: 53089s
+Epoch 20/59
+----------
+train Loss: 3.1126 Acc: 0.3132training time: 54494sval Loss: 3.2933 Acc: 0.2898training time: 55799s
+Epoch 21/59
+----------
+train Loss: 3.0492 Acc: 0.3213training time: 57177sval Loss: 3.2582 Acc: 0.2933training time: 58448s
+Epoch 22/59
+----------
+train Loss: 2.9894 Acc: 0.3302training time: 59850sval Loss: 3.2249 Acc: 0.2978training time: 61182s
+Epoch 23/59
+----------
+train Loss: 2.9271 Acc: 0.3426training time: 62710sval Loss: 3.1923 Acc: 0.3044training time: 63992s
+Epoch 24/59
+----------
+train Loss: 2.8751 Acc: 0.3512training time: 65348sval Loss: 3.1721 Acc: 0.3071training time: 66617s
+Epoch 25/59
+----------
+train Loss: 2.8181 Acc: 0.3591training time: 67977sval Loss: 3.1550 Acc: 0.3100training time: 69234s
+Epoch 26/59
+----------
+train Loss: 2.7723 Acc: 0.3682training time: 70662sval Loss: 3.1382 Acc: 0.3116training time: 72002s
+Epoch 27/59
+----------
+train Loss: 2.7184 Acc: 0.3767training time: 73477sval Loss: 3.1105 Acc: 0.3180training time: 74959s
+Epoch 28/59
+----------
+train Loss: 2.6754 Acc: 0.3859training time: 76515sval Loss: 3.0943 Acc: 0.3184training time: 77994s
+Epoch 29/59
+----------
+train Loss: 2.6315 Acc: 0.3941training time: 79413sval Loss: 3.0830 Acc: 0.3190training time: 80739s
+Epoch 30/59
+----------
+train Loss: 2.5848 Acc: 0.4014training time: 82208sval Loss: 3.0682 Acc: 0.3229training time: 83495s
+Epoch 31/59
+----------
+train Loss: 2.5437 Acc: 0.4082training time: 84867sval Loss: 3.0580 Acc: 0.3264training time: 86143s
+Epoch 32/59
+----------
+train Loss: 2.4970 Acc: 0.4172training time: 87500sval Loss: 3.0438 Acc: 0.3267training time: 88770s
+Epoch 33/59
+----------
+train Loss: 2.4593 Acc: 0.4233training time: 90204sval Loss: 3.0412 Acc: 0.3287training time: 91524s
+Epoch 34/59
+----------
+train Loss: 2.4226 Acc: 0.4301training time: 92946sval Loss: 3.0267 Acc: 0.3327training time: 94358s
+Epoch 35/59
+----------
+train Loss: 2.3830 Acc: 0.4367training time: 95746sval Loss: 3.0241 Acc: 0.3319training time: 97064s
+Epoch 36/59
+----------
+train Loss: 2.3444 Acc: 0.4446training time: 98388sval Loss: 3.0243 Acc: 0.3323training time: 99630s
+Epoch 37/59
+----------
+train Loss: 2.3073 Acc: 0.4530training time: 101175sval Loss: 3.0103 Acc: 0.3333training time: 102557s
+Epoch 38/59
+----------
+train Loss: 2.2701 Acc: 0.4598training time: 104122sval Loss: 3.0053 Acc: 0.3363training time: 105343s
+Epoch 39/59
+----------
+train Loss: 2.2335 Acc: 0.4671training time: 106686sval Loss: 3.0048 Acc: 0.3363training time: 107904s
+Epoch 40/59
+----------
+train Loss: 2.2007 Acc: 0.4738training time: 109266sval Loss: 2.9983 Acc: 0.3367training time: 110714s
+Epoch 41/59
+----------
+train Loss: 2.1635 Acc: 0.4814training time: 112347sval Loss: 2.9961 Acc: 0.3376training time: 113935s
+Epoch 42/59
+----------
+train Loss: 2.1313 Acc: 0.4894training time: 115575sval Loss: 2.9980 Acc: 0.3392training time: 116963s
+Epoch 43/59
+----------
+train Loss: 2.0934 Acc: 0.4963training time: 118395sval Loss: 2.9957 Acc: 0.3381training time: 119758s
+Epoch 44/59
+----------
+train Loss: 2.0629 Acc: 0.5011training time: 121179sval Loss: 2.9862 Acc: 0.3402training time: 122598s
+Epoch 45/59
+----------
+train Loss: 2.0245 Acc: 0.5079training time: 123970sval Loss: 2.9981 Acc: 0.3403training time: 125299s
+Epoch 46/59
+----------
+train Loss: 1.9939 Acc: 0.5148training time: 127048sval Loss: 2.9901 Acc: 0.3417training time: 128621s
+Epoch 47/59
+----------
+train Loss: 1.9656 Acc: 0.5218training time: 130091sval Loss: 2.9984 Acc: 0.3422training time: 131467s
+Epoch 48/59
+----------
+train Loss: 1.9301 Acc: 0.5289training time: 133212sval Loss: 2.9902 Acc: 0.3436training time: 134966s
+Epoch 49/59
+----------
+train Loss: 1.8974 Acc: 0.5363training time: 136814sval Loss: 2.9959 Acc: 0.3429training time: 138712s
+Epoch 50/59
+----------
+train Loss: 1.8679 Acc: 0.5418training time: 140478sval Loss: 2.9990 Acc: 0.3438training time: 141957s
+Epoch 51/59
+----------
+train Loss: 1.8326 Acc: 0.5503training time: 143549sval Loss: 2.9954 Acc: 0.3452training time: 145118s
+Epoch 52/59
+----------
+train Loss: 1.7985 Acc: 0.5581training time: 146561sval Loss: 3.0001 Acc: 0.3449training time: 147877s
+Epoch 53/59
+----------
+train Loss: 1.7756 Acc: 0.5619training time: 149325sval Loss: 3.0100 Acc: 0.3434training time: 150917s
+Epoch 54/59
+----------
+train Loss: 1.7441 Acc: 0.5704training time: 152676sval Loss: 3.0086 Acc: 0.3447training time: 154438s
+Epoch 55/59
+----------
+train Loss: 1.7143 Acc: 0.5727training time: 156125sval Loss: 3.0164 Acc: 0.3461training time: 157630s
+Epoch 56/59
+----------
+train Loss: 1.6874 Acc: 0.5826training time: 159179sval Loss: 3.0179 Acc: 0.3457training time: 160642s
+Epoch 57/59
+----------
+train Loss: 1.6547 Acc: 0.5917training time: 162109sval Loss: 3.0214 Acc: 0.3461training time: 163380s
+Epoch 58/59
+----------
+train Loss: 1.6227 Acc: 0.5957training time: 164748sval Loss: 3.0189 Acc: 0.3458training time: 166067s
+Epoch 59/59
+----------
+train Loss: 1.5963 Acc: 0.6017training time: 167569sval Loss: 3.0447 Acc: 0.3464training time: 168952s
+Training complete in 2815m 53s
+Best val Acc: 0.346438
+Finishedslurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
