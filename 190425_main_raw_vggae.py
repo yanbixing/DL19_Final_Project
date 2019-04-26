@@ -123,10 +123,13 @@ def image_loader(path, batch_size):
 
 
 # used in initialize model
-def set_parameter_requires_grad(model, pinning):
+def set_parameter_pin_grad(model, pinning):
     if pinning:
         for param in model.parameters():
             param.requires_grad = False
+    else:
+        for param in model.parameters():
+            param.requires_grad = True
 
 
 class Model_Based_Autoencoder(torch.nn.Module):
@@ -183,7 +186,7 @@ def initialize_model(model_name, pin_encoder, use_pretrained=True):
         """ VGG11_bn
         """
         model_ft = Model_Based_Autoencoder(model_name, pretrained=use_pretrained)
-        set_parameter_requires_grad(model_ft.encoder, pin_encoder)
+        set_parameter_pin_grad(model_ft.encoder, pin_encoder)
 
         input_size = 96
 
