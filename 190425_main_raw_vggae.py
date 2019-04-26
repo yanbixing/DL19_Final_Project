@@ -1,18 +1,34 @@
 from __future__ import print_function
 from __future__ import division
+
+import numpy as np
+import argparse
+import random
+import shutil
+import time
+import warnings
+
+
 import torch
 import torch.nn as nn
+
+import torch.nn.parallel
+import torch.backends.cudnn as cudnn
+import torch.distributed as dist
 import torch.optim as optim
-import numpy as np
+
+import torch.multiprocessing as mp
+import torch.utils.data
+import torch.utils.data.distributed
+
 import torchvision
 from torchvision import datasets, models, transforms
-import time
 import os
 import sys
 import copy
 
 #################################   set args  #######################
-import argparse
+
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -26,6 +42,11 @@ parser = argparse.ArgumentParser(description='DL19_FinalProject_PyTorch')
 
 parser.add_argument('--model', type=str, default='vgg',
                     help='type of cnn ("resnet", "alexnet","vgg","squeezenet","densenet","inception")')
+parser.add_argument('-b', '--batch-size', default=256, type=int,
+                    metavar='N',
+                    help='mini-batch size (default: 256), this is the total '
+                         'batch size of all GPUs on the current node when '
+                         'using Data Parallel or Distributed Data Parallel')
 parser.add_argument('--save', type=str, default='model.pt',
                     help='path to save the final model')
 parser.add_argument('--epochs', type=int, default=25,
@@ -39,15 +60,13 @@ args = parser.parse_args()
 save_path='/scratch/by783/DL_Final_models/'+args.save
 model_name = args.model
 num_epochs = args.epochs
-feature_extract = str2bool(args.pretrained)
+pin_encoder = str2bool(args.pretrained)
+loader_batch_size=args.batch_size
 # Flag for feature extracting. When False, we finetune the whole model,
 #   when True we only update the reshaped layer params
 ###################### fixed_params ###################################
-
 num_classes = 1000
 loader_image_path='/scratch/by783/DL_Final/ssl_data_96'
-loader_batch_size=256
-
 
 
 
@@ -58,6 +77,8 @@ if torch.cuda.is_available():
     sys.stdout.write('GPU mode')
 else:
     sys.stdout.write('Warning, CPU mode, pls check')
+
+
 
 def image_loader(path, batch_size):
     transform = transforms.Compose(
@@ -102,15 +123,53 @@ def image_loader(path, batch_size):
 
 
 # used in initialize model
-def set_parameter_requires_grad(model, feature_extracting):
-    if feature_extracting:
+def set_parameter_requires_grad(model, pinning):
+    if pinning:
         for param in model.parameters():
             param.requires_grad = False
 
 
+class Model_Based_Autoencoder(torch.nn.Module):
+    def __init__(self, model_name, pretrained):
+        super(Model_Based_Autoencoder, self).__init__()
+        if model_name != 'vgg':
+            sys.stdout.write('Dear, we only support vgg now...')
+
+        self.encoder = models.vgg11_bn(pretrained=pretrained).features
+        self.decoder = nn.Sequential(
+            nn.ConvTranspose2d(512, 512, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),  # de-conv8
+            nn.BatchNorm2d(512),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)),  # de-conv7
+            nn.BatchNorm2d(512),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(512, 512, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),  # de-conv6
+            nn.BatchNorm2d(512),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)),  # de-conv5
+            nn.BatchNorm2d(256),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(256, 256, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),  # de-conv4
+            nn.BatchNorm2d(256),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)),  # de-conv3
+            nn.BatchNorm2d(128),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),  # de-conv2
+            nn.BatchNorm2d(64),
+            nn.ReLU(inplace=True),
+            nn.ConvTranspose2d(64, 3, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),  # de-conv1
+            nn.BatchNorm2d(3),
+            nn.Tanh()
+        )
+
+    def forward(self, x):
+        x = self.encoder(x)
+        x = self.decoder(x)
+        return x
 
 
-def initialize_model(model_name, num_classes, feature_extract, use_pretrained=True):
+def initialize_model(model_name, pin_encoder, use_pretrained=True):
     # Initialize these variables which will be set in this if statement. Each of these
     #   variables is model specific.
     model_ft = None
@@ -123,118 +182,90 @@ def initialize_model(model_name, num_classes, feature_extract, use_pretrained=Tr
     else:
         """ VGG11_bn
         """
-        model_ft = models.vgg11_bn(pretrained=use_pretrained)
-        set_parameter_requires_grad(model_ft, feature_extract)
-
-        ##########
-
-        model_ft.avgpool = nn.AdaptiveAvgPool2d(output_size=(3, 3))
-
-        model_ft.classifier[0] = nn.Linear(in_features=4608, out_features=4096, bias=True)
-        model_ft.classifier[3] = nn.Linear(in_features=4096, out_features=4096, bias=True)
-        model_ft.classifier[6] = nn.Linear(in_features=4096, out_features=num_classes, bias=True)
-
+        model_ft = Model_Based_Autoencoder(model_name, pretrained=use_pretrained)
+        set_parameter_requires_grad(model_ft.encoder, pin_encoder)
 
         input_size = 96
 
     return model_ft, input_size
 
 
-
-def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_inception=False):
+def train_model(model, dataloaders, criterion, optimizer, num_epochs=25):
+    # unsupervised learning, we do not need train and vals
     since = time.time()
-
-    val_acc_history = []
+    loss_history = []
 
     best_model_wts = copy.deepcopy(model.state_dict())
-    best_acc = 0.0
+    best_loss = float('inf')
 
     for epoch in range(num_epochs):
         print('Epoch {}/{}'.format(epoch, num_epochs - 1))
         print('-' * 10)
 
-        # Each epoch has a training and validation phase
-        for phase in ['train', 'val']:
-            if phase == 'train':
-                model.train()  # Set model to training mode
-            else:
-                model.eval()   # Set model to evaluate mode
+        ################# train the model on unsupervised data ############
+        model.train()
 
-            running_loss = 0.0
-            running_corrects = 0
+        running_loss = 0.0
 
-            # Iterate over data.
-            for inputs, labels in dataloaders[phase]:
-                inputs = inputs.to(device)
-                labels = labels.to(device)
+        for inputs, _ in dataloaders['unlabeled']:
+            inputs = inputs.to(device)
+            optimizer.zero_grad()
 
-                # zero the parameter gradients
-                optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = criterion(outputs, inputs)
 
-                # forward
-                # track history if only in train
-                with torch.set_grad_enabled(phase == 'train'):
-                    # Get model outputs and calculate loss
-                    # Special case for inception because in training it has an auxiliary output. In train
-                    #   mode we calculate the loss by summing the final output and the auxiliary output
-                    #   but in testing we only consider the final output.
-                    if is_inception and phase == 'train':
-                        # From https://discuss.pytorch.org/t/how-to-optimize-inception-model-with-auxiliary-classifiers/7958
-                        outputs, aux_outputs = model(inputs)
-                        loss1 = criterion(outputs, labels)
-                        loss2 = criterion(aux_outputs, labels)
-                        loss = loss1 + 0.4*loss2
-                    else:
-                        outputs = model(inputs)
-                        loss = criterion(outputs, labels)
+            running_loss += loss.item() * inputs.size(0)
 
-                    _, preds = torch.max(outputs, 1)
+            loss.backward()
+            optimizer.step()
 
-                    # backward + optimize only if in training phase
-                    if phase == 'train':
-                        loss.backward()
-                        optimizer.step()
+        epoch_loss = running_loss / len(dataloaders['unlabeled'].dataset)
+        sys.stdout.write('Training time: {:.0f}s'.format(time.time() - since))
+        sys.stdout.write('Training loss: {:.4f}'.format(epoch_loss))
+        ################# evaluate the model performance on labeled data ############
 
-                # statistics
-                running_loss += loss.item() * inputs.size(0)
-                running_corrects += torch.sum(preds == labels.data)
+        model.eval()
 
-            epoch_loss = running_loss / len(dataloaders[phase].dataset)
-            epoch_acc = running_corrects.double() / len(dataloaders[phase].dataset)
+        eval_loss = 0.0
+        for inputs, _ in dataloaders['labeled']:
+            inputs = inputs.to(device)
+            outputs = model(inputs)
+            loss = criterion(outputs, inputs)
+            eval_loss += loss.item() * inputs.size(0)
 
-            sys.stdout.write('{} Loss: {:.4f} Acc: {:.4f}'.format(phase, epoch_loss, epoch_acc))
-            sys.stdout.write('training time: {:.0f}s'.format( time.time() - since ))
+        epoch_eval_loss = eval_loss / len(dataloaders['labeled'].dataset)
+        sys.stdout.write('Evaluation time: {:.0f}s'.format(time.time() - since))
+        sys.stdout.write(' Eval loss: {:.4f}'.format(epoch_eval_loss))
 
-            # deep copy the model
-            if phase == 'val':
-                if epoch_acc > best_acc:
-                    best_acc = epoch_acc
-                    best_model_wts = copy.deepcopy(model.state_dict())
-                    with open(save_path, 'wb') as f:
-                        torch.save(model, f)
-                #else:
-                    #lr/=4
-                val_acc_history.append(epoch_acc)
-                with open(save_path+'_val_acc', 'w') as f:
-                    for item in val_acc_history:
-                        f.write("%s\n" % item)
+        #################
 
-        print()
+        loss_history.append((epoch_loss, epoch_eval_loss))
+
+        if epoch_eval_loss < best_loss:
+            best_loss = epoch_eval_loss
+            best_model_wts = copy.deepcopy(model.state_dict())
+            with open(save_path, 'wb') as f:
+                torch.save(model, f)
+
+        with open(save_path + '_loss', 'w') as f:
+            for item in loss_history:
+                f.write("unlabeled: %s, labeled: %s \n,  " % (item[0], item[1]))
 
     time_elapsed = time.time() - since
     print('Training complete in {:.0f}m {:.0f}s'.format(time_elapsed // 60, time_elapsed % 60))
-    print('Best val Acc: {:4f}'.format(best_acc))
 
-    # load best model weights
-    model.load_state_dict(best_model_wts)
-    return model, val_acc_history
+    return model, loss_history
 
 
 
 ####### make sure model and input size
 
-model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained=True)
+model_ft, input_size = initialize_model(model_name, pin_encoder, use_pretrained=True)
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+if torch.cuda.device_count() > 1:
+    model_ft = nn.DataParallel(model_ft)
 
 model_ft = model_ft.to(device)
 
@@ -247,7 +278,8 @@ sys.stdout.write('Begin to load data...')
 
 dataloaders={}
 
-dataloaders['train'], dataloaders['val'], data_loader_unsup, class_to_idx_dict = image_loader(loader_image_path,loader_batch_size)
+dataloaders['labeled'], data_loader_val, dataloaders['unlabeled'], class_to_idx_dict = image_loader(loader_image_path,loader_batch_size)
+
 
 ######
 
@@ -258,7 +290,7 @@ dataloaders['train'], dataloaders['val'], data_loader_unsup, class_to_idx_dict =
 #  is True.
 params_to_update = model_ft.parameters()
 print("Params to learn:")
-if feature_extract:
+if pin_encoder:
     params_to_update = []
     for name,param in model_ft.named_parameters():
         if param.requires_grad == True:
@@ -270,15 +302,17 @@ else:
             sys.stdout.write("\t{}".format(name))
 
 # Observe that all parameters are being optimized
-optimizer_ft = optim.SGD(params_to_update, lr=0.001, momentum=0.9)
+criterion = nn.MSELoss()
+
+learning_rate=0.001
+optimizer_ft = torch.optim.Adam(model_ft.parameters(), lr=learning_rate, weight_decay=1e-5)
 
 # Setup the loss fxn
-criterion = nn.CrossEntropyLoss()
 
 sys.stdout.write('Begin to train...')
 
 # Train and evaluate
-model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
+model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs)
 
 sys.stdout.write('Finished')
 
