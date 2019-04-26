@@ -1,0 +1,115 @@
+begin_raw_densenet_model
+Downloading: "https://download.pytorch.org/models/densenet121-a639ec97.pth" to /home/by783/.torch/models/densenet121-a639ec97.pth
+  0%|          | 0/32342954 [00:00<?, ?it/s] 19%|█▊        | 5996544/32342954 [00:00<00:00, 59786606.33it/s] 34%|███▍      | 11116544/32342954 [00:00<00:00, 56918738.03it/s] 51%|█████▏    | 16646144/32342954 [00:00<00:00, 56369895.56it/s] 69%|██████▊   | 22216704/32342954 [00:00<00:00, 55627640.46it/s] 82%|████████▏ | 26361856/32342954 [00:00<00:00, 45066907.52it/s] 93%|█████████▎| 30203904/32342954 [00:00<00:00, 41967199.37it/s]100%|██████████| 32342954/32342954 [00:00<00:00, 47077830.64it/s]
+PyTorch Version:  0.4.1
+Torchvision Version:  0.2.2
+GPU mode
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	 classifier.weight
+	 classifier.bias
+Begin to train
+Epoch 0/19
+----------
+train Loss: 6.5430 Acc: 0.0377
+val Loss: 6.0454 Acc: 0.1193
+
+Epoch 1/19
+----------
+train Loss: 5.6511 Acc: 0.1875
+val Loss: 5.2310 Acc: 0.2512
+
+Epoch 2/19
+----------
+train Loss: 4.9069 Acc: 0.2975
+val Loss: 4.5759 Acc: 0.3153
+
+Epoch 3/19
+----------
+train Loss: 4.3076 Acc: 0.3607
+val Loss: 4.0756 Acc: 0.3549
+
+Epoch 4/19
+----------
+train Loss: 3.8423 Acc: 0.4038
+val Loss: 3.6977 Acc: 0.3805
+
+Epoch 5/19
+----------
+train Loss: 3.4863 Acc: 0.4341
+val Loss: 3.4046 Acc: 0.4000
+
+Epoch 6/19
+----------
+train Loss: 3.2119 Acc: 0.4583
+val Loss: 3.1936 Acc: 0.4126
+
+Epoch 7/19
+----------
+train Loss: 2.9975 Acc: 0.4754
+val Loss: 3.0438 Acc: 0.4208
+
+Epoch 8/19
+----------
+train Loss: 2.8276 Acc: 0.4914
+val Loss: 2.9065 Acc: 0.4292
+
+Epoch 9/19
+----------
+train Loss: 2.6900 Acc: 0.5010
+val Loss: 2.8196 Acc: 0.4348
+
+Epoch 10/19
+----------
+train Loss: 2.5750 Acc: 0.5117
+val Loss: 2.7321 Acc: 0.4387
+
+Epoch 11/19
+----------
+train Loss: 2.4781 Acc: 0.5219
+val Loss: 2.6653 Acc: 0.4423
+
+Epoch 12/19
+----------
+train Loss: 2.3956 Acc: 0.5295
+val Loss: 2.5968 Acc: 0.4477
+
+Epoch 13/19
+----------
+train Loss: 2.3238 Acc: 0.5367
+val Loss: 2.5699 Acc: 0.4491
+
+Epoch 14/19
+----------
+train Loss: 2.2600 Acc: 0.5429
+val Loss: 2.5208 Acc: 0.4521
+
+Epoch 15/19
+----------
+train Loss: 2.2047 Acc: 0.5499
+val Loss: 2.4840 Acc: 0.4556
+
+Epoch 16/19
+----------
+train Loss: 2.1537 Acc: 0.5569
+val Loss: 2.4521 Acc: 0.4561
+
+Epoch 17/19
+----------
+train Loss: 2.1062 Acc: 0.5640
+val Loss: 2.4331 Acc: 0.4583
+
+Epoch 18/19
+----------
+train Loss: 2.0637 Acc: 0.5696
+val Loss: 2.4052 Acc: 0.4597
+
+Epoch 19/19
+----------
+train Loss: 2.0244 Acc: 0.5739
+val Loss: 2.3922 Acc: 0.4604
+
+Training complete in 949m 33s
+Best val Acc: 0.460406
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4

@@ -1,0 +1,115 @@
+begin_raw_squeezenet_model
+Downloading: "https://download.pytorch.org/models/squeezenet1_0-a815701f.pth" to /home/by783/.torch/models/squeezenet1_0-a815701f.pth
+  0%|          | 0/5017600 [00:00<?, ?it/s] 16%|█▋        | 819200/5017600 [00:00<00:00, 8021060.90it/s] 31%|███       | 1548288/5017600 [00:00<00:00, 7784590.56it/s] 47%|████▋     | 2367488/5017600 [00:00<00:00, 7900250.39it/s] 66%|██████▋   | 3325952/5017600 [00:00<00:00, 8270474.06it/s] 85%|████████▌ | 4284416/5017600 [00:00<00:00, 8533926.44it/s]100%|██████████| 5017600/5017600 [00:00<00:00, 8727783.70it/s]
+PyTorch Version:  0.4.1
+Torchvision Version:  0.2.2
+GPU mode
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	 classifier.1.weight
+	 classifier.1.bias
+Begin to train
+Epoch 0/19
+----------
+train Loss: 6.0805 Acc: 0.0552
+val Loss: 4.9059 Acc: 0.1281
+
+Epoch 1/19
+----------
+train Loss: 4.3181 Acc: 0.1875
+val Loss: 3.9628 Acc: 0.2212
+
+Epoch 2/19
+----------
+train Loss: 3.5903 Acc: 0.2749
+val Loss: 3.6061 Acc: 0.2645
+
+Epoch 3/19
+----------
+train Loss: 3.2195 Acc: 0.3289
+val Loss: 3.4131 Acc: 0.2943
+
+Epoch 4/19
+----------
+train Loss: 2.9741 Acc: 0.3683
+val Loss: 3.2951 Acc: 0.3095
+
+Epoch 5/19
+----------
+train Loss: 2.7964 Acc: 0.3955
+val Loss: 3.2220 Acc: 0.3207
+
+Epoch 6/19
+----------
+train Loss: 2.6491 Acc: 0.4214
+val Loss: 3.1649 Acc: 0.3299
+
+Epoch 7/19
+----------
+train Loss: 2.5294 Acc: 0.4415
+val Loss: 3.1299 Acc: 0.3344
+
+Epoch 8/19
+----------
+train Loss: 2.4285 Acc: 0.4619
+val Loss: 3.0981 Acc: 0.3407
+
+Epoch 9/19
+----------
+train Loss: 2.3367 Acc: 0.4766
+val Loss: 3.0819 Acc: 0.3401
+
+Epoch 10/19
+----------
+train Loss: 2.2566 Acc: 0.4929
+val Loss: 3.0582 Acc: 0.3478
+
+Epoch 11/19
+----------
+train Loss: 2.1832 Acc: 0.5064
+val Loss: 3.0458 Acc: 0.3497
+
+Epoch 12/19
+----------
+train Loss: 2.1212 Acc: 0.5181
+val Loss: 3.0316 Acc: 0.3515
+
+Epoch 13/19
+----------
+train Loss: 2.0592 Acc: 0.5294
+val Loss: 3.0234 Acc: 0.3523
+
+Epoch 14/19
+----------
+train Loss: 2.0021 Acc: 0.5409
+val Loss: 3.0091 Acc: 0.3556
+
+Epoch 15/19
+----------
+train Loss: 1.9523 Acc: 0.5538
+val Loss: 3.0110 Acc: 0.3570
+
+Epoch 16/19
+----------
+train Loss: 1.9043 Acc: 0.5610
+val Loss: 3.0106 Acc: 0.3562
+
+Epoch 17/19
+----------
+train Loss: 1.8595 Acc: 0.5712
+val Loss: 3.0058 Acc: 0.3581
+
+Epoch 18/19
+----------
+train Loss: 1.8159 Acc: 0.5821
+val Loss: 3.0081 Acc: 0.3572
+
+Epoch 19/19
+----------
+train Loss: 1.7763 Acc: 0.5914
+val Loss: 3.0041 Acc: 0.3580
+
+Training complete in 1436m 50s
+Best val Acc: 0.358141
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4

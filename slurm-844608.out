@@ -1,0 +1,117 @@
+begin_raw_inception_model
+Downloading: "https://download.pytorch.org/models/inception_v3_google-1a9a5a14.pth" to /home/by783/.torch/models/inception_v3_google-1a9a5a14.pth
+  0%|          | 0/108857766 [00:00<?, ?it/s]  3%|▎         | 3629056/108857766 [00:00<00:02, 36276496.74it/s]  9%|▊         | 9256960/108857766 [00:00<00:02, 40594388.89it/s] 12%|█▏        | 13516800/108857766 [00:00<00:02, 41172675.44it/s] 18%|█▊        | 19726336/108857766 [00:00<00:01, 45620239.93it/s] 24%|██▍       | 26263552/108857766 [00:00<00:01, 50165207.69it/s] 30%|██▉       | 32202752/108857766 [00:00<00:01, 52610891.06it/s] 36%|███▌      | 39272448/108857766 [00:00<00:01, 56982570.11it/s] 41%|████▏     | 44949504/108857766 [00:00<00:01, 56711931.74it/s] 46%|████▋     | 50610176/108857766 [00:00<00:01, 46204328.95it/s] 51%|█████     | 55541760/108857766 [00:01<00:01, 37163796.25it/s] 55%|█████▍    | 59760640/108857766 [00:01<00:01, 33790045.08it/s] 58%|█████▊    | 63553536/108857766 [00:01<00:01, 30814245.90it/s] 62%|██████▏   | 66977792/108857766 [00:01<00:01, 29168380.29it/s] 64%|██████▍   | 70148096/108857766 [00:01<00:01, 27220297.40it/s] 67%|██████▋   | 73080832/108857766 [00:01<00:01, 27117137.23it/s] 73%|███████▎  | 79085568/108857766 [00:01<00:00, 32355598.09it/s] 76%|███████▌  | 82853888/108857766 [00:02<00:00, 32909576.20it/s] 80%|████████  | 87113728/108857766 [00:02<00:00, 35307299.46it/s] 86%|████████▌ | 93634560/108857766 [00:02<00:00, 40915335.12it/s] 90%|█████████ | 98279424/108857766 [00:02<00:00, 35118419.68it/s] 94%|█████████▍| 102326272/108857766 [00:02<00:00, 27607515.46it/s]100%|██████████| 108857766/108857766 [00:02<00:00, 39565384.89it/s]
+PyTorch Version:  0.4.1
+Torchvision Version:  0.2.2
+GPU mode
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	 AuxLogits.fc.weight
+	 AuxLogits.fc.bias
+	 fc.weight
+	 fc.bias
+Begin to train
+Epoch 0/19
+----------
+train Loss: 9.5477 Acc: 0.0069
+val Loss: 6.5981 Acc: 0.0737
+
+Epoch 1/19
+----------
+train Loss: 9.0711 Acc: 0.0735
+val Loss: 6.2800 Acc: 0.2358
+
+Epoch 2/19
+----------
+train Loss: 8.6234 Acc: 0.1804
+val Loss: 5.9681 Acc: 0.3017
+
+Epoch 3/19
+----------
+train Loss: 8.1930 Acc: 0.2520
+val Loss: 5.6761 Acc: 0.3299
+
+Epoch 4/19
+----------
+train Loss: 7.7811 Acc: 0.2977
+val Loss: 5.3929 Acc: 0.3439
+
+Epoch 5/19
+----------
+train Loss: 7.3886 Acc: 0.3236
+val Loss: 5.1165 Acc: 0.3540
+
+Epoch 6/19
+----------
+train Loss: 7.0170 Acc: 0.3434
+val Loss: 4.8574 Acc: 0.3608
+
+Epoch 7/19
+----------
+train Loss: 6.6713 Acc: 0.3613
+val Loss: 4.6163 Acc: 0.3684
+
+Epoch 8/19
+----------
+train Loss: 6.3488 Acc: 0.3736
+val Loss: 4.4155 Acc: 0.3744
+
+Epoch 9/19
+----------
+train Loss: 6.0554 Acc: 0.3866
+val Loss: 4.2002 Acc: 0.3803
+
+Epoch 10/19
+----------
+train Loss: 5.7846 Acc: 0.3948
+val Loss: 4.0417 Acc: 0.3852
+
+Epoch 11/19
+----------
+train Loss: 5.5394 Acc: 0.4033
+val Loss: 3.8831 Acc: 0.3888
+
+Epoch 12/19
+----------
+train Loss: 5.3168 Acc: 0.4123
+val Loss: 3.7341 Acc: 0.3950
+
+Epoch 13/19
+----------
+train Loss: 5.1185 Acc: 0.4212
+val Loss: 3.6064 Acc: 0.3977
+
+Epoch 14/19
+----------
+train Loss: 4.9375 Acc: 0.4283
+val Loss: 3.4976 Acc: 0.4027
+
+Epoch 15/19
+----------
+train Loss: 4.7786 Acc: 0.4323
+val Loss: 3.3969 Acc: 0.4058
+
+Epoch 16/19
+----------
+train Loss: 4.6335 Acc: 0.4386
+val Loss: 3.3101 Acc: 0.4087
+
+Epoch 17/19
+----------
+train Loss: 4.5021 Acc: 0.4460
+val Loss: 3.2279 Acc: 0.4111
+
+Epoch 18/19
+----------
+train Loss: 4.3836 Acc: 0.4505
+val Loss: 3.1840 Acc: 0.4129
+
+Epoch 19/19
+----------
+train Loss: 4.2800 Acc: 0.4535
+val Loss: 3.0996 Acc: 0.4163
+
+Training complete in 1077m 24s
+Best val Acc: 0.416266
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
