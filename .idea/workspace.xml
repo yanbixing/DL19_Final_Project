@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s" beforeDir="false" afterPath="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/190427_main_vgg_encoder_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/190427_main_vgg_encoder_feature.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/190427_main_vgg_encoder_feature.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="292">
+              <caret line="357" selection-start-line="357" selection-end-line="357" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -24,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -92,8 +92,8 @@
         <option value="$PROJECT_DIR$/190425_run_main_raw_vggae_en_pretrained.s" />
         <option value="$PROJECT_DIR$/190425_run_main_raw_vggae_fromscratch.s" />
         <option value="$PROJECT_DIR$/../../Sem2_DL/examples/dcgan/main.py" />
-        <option value="$PROJECT_DIR$/190427_main_vgg_encoder_feature.py" />
         <option value="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s" />
+        <option value="$PROJECT_DIR$/190427_main_vgg_encoder_feature.py" />
       </list>
     </option>
   </component>
@@ -170,7 +170,7 @@
     <frame x="26" y="23" width="1403" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35121235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35121235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -181,7 +181,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,20 +333,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190427_main_vgg_encoder_feature.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190427_main_vgg_encoder_feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="357" selection-start-line="357" selection-end-line="357" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

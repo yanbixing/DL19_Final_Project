@@ -355,7 +355,6 @@ criterion = nn.CrossEntropyLoss()
 sys.stdout.write('Begin to train...\n')
 # Train and evaluate
 model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
-um_epochs=num_epochs, is_inception=(model_name=="inception"))
 
 sys.stdout.write('Finished')
 
