@@ -10,4 +10,4 @@ module purge
 source ~/myenv/bin/activate
 
 python -c "print('begin_dn_vggae_fromscratch_model')"
-python 190427_main_dn_vggae.py --model vgg --batch-size 1024 --save 190425_dn_vggae_fromscratch_30pc.pt --epochs 40 --pretrained False --noise-level 0.066
+python 190427_main_dn_vggae.py --model vgg --batch-size 512 --save 190425_dn_vggae_fromscratch_30pc.pt --epochs 40 --pretrained False --noise-level 0.066
