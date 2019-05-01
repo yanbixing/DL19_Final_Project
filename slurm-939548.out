@@ -1,0 +1,376 @@
+begin_raw_vgg_encoder_features
+/home/by783/myenv/lib/python3.6/site-packages/torch/serialization.py:425: SourceChangeWarning: source code of class '__main__.Model_Based_Autoencoder' has changed. you can retrieve the original source code by accessing the object's source attribute or set `torch.nn.Module.dump_patches = True` and use the patch tool to revert the changes.
+  warnings.warn(msg, SourceChangeWarning)
+PyTorch Version:  0.4.1
+Torchvision Version:  0.2.2
+PyTorch Version: 0.4.1Torchvision Version: GPU modeBegin to load data...
+Begin to load data...
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	module.classifier.0.weight
+	module.classifier.0.bias
+	module.classifier.3.weight
+	module.classifier.3.bias
+	module.classifier.6.weight
+	module.classifier.6.bias
+Begin to train...
+Epoch 0/49
+----------
+train Loss: 6.9121 Acc: 0.0009
+training time: 1776s
+val Loss: 6.9080 Acc: 0.0013
+training time: 3559s
+
+Epoch 1/49
+----------
+train Loss: 6.9105 Acc: 0.0011
+training time: 5508s
+val Loss: 6.9069 Acc: 0.0013
+training time: 7249s
+
+Epoch 2/49
+----------
+train Loss: 6.9086 Acc: 0.0010
+training time: 9098s
+val Loss: 6.9059 Acc: 0.0013
+training time: 11031s
+
+Epoch 3/49
+----------
+train Loss: 6.9077 Acc: 0.0010
+training time: 13100s
+val Loss: 6.9050 Acc: 0.0013
+training time: 14947s
+
+Epoch 4/49
+----------
+train Loss: 6.9066 Acc: 0.0011
+training time: 16788s
+val Loss: 6.9041 Acc: 0.0013
+training time: 18598s
+
+Epoch 5/49
+----------
+train Loss: 6.9054 Acc: 0.0014
+training time: 20392s
+val Loss: 6.9032 Acc: 0.0015
+training time: 22156s
+
+Epoch 6/49
+----------
+train Loss: 6.9041 Acc: 0.0014
+training time: 23999s
+val Loss: 6.9023 Acc: 0.0018
+training time: 25854s
+
+Epoch 7/49
+----------
+train Loss: 6.9035 Acc: 0.0014
+training time: 27675s
+val Loss: 6.9014 Acc: 0.0019
+training time: 29421s
+
+Epoch 8/49
+----------
+train Loss: 6.9024 Acc: 0.0015
+training time: 31383s
+val Loss: 6.9004 Acc: 0.0023
+training time: 33137s
+
+Epoch 9/49
+----------
+train Loss: 6.9009 Acc: 0.0017
+training time: 34967s
+val Loss: 6.8994 Acc: 0.0025
+training time: 36744s
+
+Epoch 10/49
+----------
+train Loss: 6.9004 Acc: 0.0012
+training time: 38629s
+val Loss: 6.8984 Acc: 0.0029
+training time: 40660s
+
+Epoch 11/49
+----------
+train Loss: 6.8989 Acc: 0.0018
+training time: 42581s
+val Loss: 6.8972 Acc: 0.0033
+training time: 44387s
+
+Epoch 12/49
+----------
+train Loss: 6.8976 Acc: 0.0018
+training time: 46294s
+val Loss: 6.8960 Acc: 0.0039
+training time: 48237s
+
+Epoch 13/49
+----------
+train Loss: 6.8963 Acc: 0.0018
+training time: 50216s
+val Loss: 6.8946 Acc: 0.0037
+training time: 52159s
+
+Epoch 14/49
+----------
+train Loss: 6.8947 Acc: 0.0023
+training time: 54113s
+val Loss: 6.8931 Acc: 0.0040
+training time: 55965s
+
+Epoch 15/49
+----------
+train Loss: 6.8933 Acc: 0.0021
+training time: 57735s
+val Loss: 6.8914 Acc: 0.0043
+training time: 59515s
+
+Epoch 16/49
+----------
+train Loss: 6.8920 Acc: 0.0022
+training time: 61293s
+val Loss: 6.8896 Acc: 0.0044
+training time: 63002s
+
+Epoch 17/49
+----------
+train Loss: 6.8899 Acc: 0.0023
+training time: 64750s
+val Loss: 6.8877 Acc: 0.0044
+training time: 66486s
+
+Epoch 18/49
+----------
+train Loss: 6.8874 Acc: 0.0029
+training time: 68248s
+val Loss: 6.8855 Acc: 0.0046
+training time: 69887s
+
+Epoch 19/49
+----------
+train Loss: 6.8857 Acc: 0.0024
+training time: 71277s
+val Loss: 6.8830 Acc: 0.0047
+training time: 72589s
+
+Epoch 20/49
+----------
+train Loss: 6.8837 Acc: 0.0025
+training time: 73950s
+val Loss: 6.8803 Acc: 0.0044
+training time: 75266s
+
+Epoch 21/49
+----------
+train Loss: 6.8808 Acc: 0.0027
+training time: 76615s
+val Loss: 6.8771 Acc: 0.0045
+training time: 77963s
+
+Epoch 22/49
+----------
+train Loss: 6.8766 Acc: 0.0034
+training time: 79309s
+val Loss: 6.8735 Acc: 0.0045
+training time: 80612s
+
+Epoch 23/49
+----------
+train Loss: 6.8732 Acc: 0.0036
+training time: 81965s
+val Loss: 6.8695 Acc: 0.0046
+training time: 83292s
+
+Epoch 24/49
+----------
+train Loss: 6.8696 Acc: 0.0036
+training time: 84638s
+val Loss: 6.8652 Acc: 0.0046
+training time: 85957s
+
+Epoch 25/49
+----------
+train Loss: 6.8649 Acc: 0.0033
+training time: 87345s
+val Loss: 6.8600 Acc: 0.0045
+training time: 88709s
+
+Epoch 26/49
+----------
+train Loss: 6.8594 Acc: 0.0035
+training time: 90113s
+val Loss: 6.8545 Acc: 0.0041
+training time: 91559s
+
+Epoch 27/49
+----------
+train Loss: 6.8549 Acc: 0.0035
+training time: 93005s
+val Loss: 6.8481 Acc: 0.0041
+training time: 94459s
+
+Epoch 28/49
+----------
+train Loss: 6.8470 Acc: 0.0035
+training time: 95924s
+val Loss: 6.8408 Acc: 0.0043
+training time: 97297s
+
+Epoch 29/49
+----------
+train Loss: 6.8415 Acc: 0.0036
+training time: 98735s
+val Loss: 6.8331 Acc: 0.0043
+training time: 100236s
+
+Epoch 30/49
+----------
+train Loss: 6.8320 Acc: 0.0039
+training time: 101688s
+val Loss: 6.8243 Acc: 0.0044
+training time: 103270s
+
+Epoch 31/49
+----------
+train Loss: 6.8242 Acc: 0.0040
+training time: 104792s
+val Loss: 6.8150 Acc: 0.0044
+training time: 106368s
+
+Epoch 32/49
+----------
+train Loss: 6.8145 Acc: 0.0041
+training time: 107910s
+val Loss: 6.8052 Acc: 0.0043
+training time: 109346s
+
+Epoch 33/49
+----------
+train Loss: 6.8055 Acc: 0.0038
+training time: 110810s
+val Loss: 6.7953 Acc: 0.0044
+training time: 112252s
+
+Epoch 34/49
+----------
+train Loss: 6.7959 Acc: 0.0036
+training time: 113777s
+val Loss: 6.7853 Acc: 0.0046
+training time: 115240s
+
+Epoch 35/49
+----------
+train Loss: 6.7861 Acc: 0.0039
+training time: 116681s
+val Loss: 6.7756 Acc: 0.0050
+training time: 118061s
+
+Epoch 36/49
+----------
+train Loss: 6.7765 Acc: 0.0042
+training time: 119487s
+val Loss: 6.7662 Acc: 0.0055
+training time: 120919s
+
+Epoch 37/49
+----------
+train Loss: 6.7669 Acc: 0.0040
+training time: 122361s
+val Loss: 6.7572 Acc: 0.0057
+training time: 123746s
+
+Epoch 38/49
+----------
+train Loss: 6.7587 Acc: 0.0039
+training time: 125345s
+val Loss: 6.7488 Acc: 0.0060
+training time: 126682s
+
+Epoch 39/49
+----------
+train Loss: 6.7497 Acc: 0.0043
+training time: 128314s
+val Loss: 6.7405 Acc: 0.0063
+training time: 129689s
+
+Epoch 40/49
+----------
+train Loss: 6.7421 Acc: 0.0046
+training time: 131451s
+val Loss: 6.7328 Acc: 0.0070
+training time: 133206s
+
+Epoch 41/49
+----------
+train Loss: 6.7365 Acc: 0.0042
+training time: 134870s
+val Loss: 6.7253 Acc: 0.0073
+training time: 136857s
+
+Epoch 42/49
+----------
+train Loss: 6.7260 Acc: 0.0045
+training time: 138991s
+val Loss: 6.7178 Acc: 0.0078
+training time: 140935s
+
+Epoch 43/49
+----------
+train Loss: 6.7189 Acc: 0.0051
+training time: 143063s
+val Loss: 6.7103 Acc: 0.0085
+training time: 145139s
+
+Epoch 44/49
+----------
+train Loss: 6.7123 Acc: 0.0057
+training time: 147123s
+val Loss: 6.7029 Acc: 0.0090
+training time: 149077s
+
+Epoch 45/49
+----------
+train Loss: 6.7033 Acc: 0.0059
+training time: 150964s
+val Loss: 6.6953 Acc: 0.0090
+training time: 152832s
+
+Epoch 46/49
+----------
+train Loss: 6.6970 Acc: 0.0057
+training time: 154685s
+val Loss: 6.6875 Acc: 0.0092
+training time: 156358s
+
+Epoch 47/49
+----------
+train Loss: 6.6878 Acc: 0.0061
+training time: 158027s
+val Loss: 6.6793 Acc: 0.0094
+training time: 159739s
+
+Epoch 48/49
+----------
+train Loss: 6.6819 Acc: 0.0060
+training time: 161390s
+val Loss: 6.6711 Acc: 0.0097
+training time: 163068s
+
+Epoch 49/49
+----------
+train Loss: 6.6713 Acc: 0.0064
+training time: 164863s
+val Loss: 6.6622 Acc: 0.0098
+training time: 166506s
+
+Training complete in 2775m 7s
+Best val Acc: 0.009766
+Traceback (most recent call last):
+  File "190427_main_vgg_encoder_feature.py", line 357, in <module>
+    model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
+  File "190427_main_vgg_encoder_feature.py", line 297, in train_model
+    model.load_state_dict(best_model_wts)
+NameError: name 'best_model_wts' is not defined
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
