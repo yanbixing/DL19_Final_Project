@@ -297,6 +297,10 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25):
 
         eval_loss = 0.0
         for inputs, _ in dataloaders['labeled']:
+
+            del encoder_feature_list[:]  # layer input
+            del decoder_feature_list[:]  # layer output
+
             inputs = inputs.to(device)
 
             outputs = model(inputs)

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="" />
+    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/190501_main_SDn_vggae.py" beforeDir="false" afterPath="$PROJECT_DIR$/190501_main_SDn_vggae.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/190501_main_SDn_vggae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="265" column="24" lean-forward="true" selection-start-line="265" selection-start-column="24" selection-end-line="265" selection-end-column="24" />
+            <state relative-caret-position="137">
+              <caret line="302" column="12" selection-start-line="302" selection-start-column="12" selection-end-line="302" selection-end-column="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -160,9 +162,9 @@
         <option value="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature_2_lr0005_mom07.s" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n10pc_small.s" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small.s" />
-        <option value="$PROJECT_DIR$/190501_main_SDn_vggae.py" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n30pc_small.s" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n00pc_small.s" />
+        <option value="$PROJECT_DIR$/190501_main_SDn_vggae.py" />
       </list>
     </option>
   </component>
@@ -239,7 +241,7 @@
     <frame x="26" y="23" width="1403" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3563556" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3563556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,7 +252,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -499,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/190501_main_SDn_vggae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="265" column="24" lean-forward="true" selection-start-line="265" selection-start-column="24" selection-end-line="265" selection-end-column="24" />
+        <state relative-caret-position="137">
+          <caret line="302" column="12" selection-start-line="302" selection-start-column="12" selection-end-line="302" selection-end-column="12" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
