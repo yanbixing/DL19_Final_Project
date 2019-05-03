@@ -59,6 +59,8 @@ parser.add_argument("--pretrained", type=str, default='True',
                     help="use pre-trained conv layers.")
 parser.add_argument('--noise-level', type=float, default=0.3,
                     help='add noise to input')
+parser.add_argument('--lr', type=float, default=0.001,
+                    help='learning rate')
 
 args = parser.parse_args()
 
@@ -392,8 +394,8 @@ else:
 
 criterion = nn.MSELoss()
 
-learning_rate=0.001
-optimizer_ft = torch.optim.Adam(model_ft.parameters(), lr=learning_rate, weight_decay=1e-5)
+learning_rate=args.lr
+optimizer_ft = torch.optim.Adam(model_ft.parameters(), lr=learning_rate, weight_decay=1e-4)
 
 # Setup the loss fxn
 
