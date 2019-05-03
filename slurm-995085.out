@@ -1,0 +1,102 @@
+begin_SDn_vggae_fromscratch_30pc_model
+PyTorch Version: 0.4.1
+Torchvision Version: 0.2.2
+ GPU mode 
+
+Begin to load data...
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	encoder.0.weight
+	encoder.0.bias
+	encoder.1.weight
+	encoder.1.bias
+	encoder.4.weight
+	encoder.4.bias
+	encoder.5.weight
+	encoder.5.bias
+	encoder.8.weight
+	encoder.8.bias
+	encoder.9.weight
+	encoder.9.bias
+	encoder.11.weight
+	encoder.11.bias
+	encoder.12.weight
+	encoder.12.bias
+	encoder.15.weight
+	encoder.15.bias
+	encoder.16.weight
+	encoder.16.bias
+	encoder.18.weight
+	encoder.18.bias
+	encoder.19.weight
+	encoder.19.bias
+	encoder.22.weight
+	encoder.22.bias
+	encoder.23.weight
+	encoder.23.bias
+	encoder.25.weight
+	encoder.25.bias
+	encoder.26.weight
+	encoder.26.bias
+	decoder.0.weight
+	decoder.0.bias
+	decoder.1.weight
+	decoder.1.bias
+	decoder.3.weight
+	decoder.3.bias
+	decoder.4.weight
+	decoder.4.bias
+	decoder.6.weight
+	decoder.6.bias
+	decoder.7.weight
+	decoder.7.bias
+	decoder.9.weight
+	decoder.9.bias
+	decoder.10.weight
+	decoder.10.bias
+	decoder.12.weight
+	decoder.12.bias
+	decoder.13.weight
+	decoder.13.bias
+	decoder.15.weight
+	decoder.15.bias
+	decoder.16.weight
+	decoder.16.bias
+	decoder.18.weight
+	decoder.18.bias
+	decoder.19.weight
+	decoder.19.bias
+	decoder.21.weight
+	decoder.21.bias
+	decoder.22.weight
+	decoder.22.bias
+Begin to train...3
+MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+7
+MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+14
+MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+21
+MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+Epoch 0/39
+----------
+Training time: 11683sTraining loss: 1.1444Traceback (most recent call last):
+  File "190501_main_SDn_vggae.py", line 391, in <module>
+    model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs)
+  File "190501_main_SDn_vggae.py", line 302, in train_model
+    outputs = model(inputs)
+  File "/home/by783/myenv/lib/python3.6/site-packages/torch/nn/modules/module.py", line 477, in __call__
+    result = self.forward(*input, **kwargs)
+  File "190501_main_SDn_vggae.py", line 188, in forward
+    x = self.encoder(x)
+  File "/home/by783/myenv/lib/python3.6/site-packages/torch/nn/modules/module.py", line 477, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/by783/myenv/lib/python3.6/site-packages/torch/nn/modules/container.py", line 91, in forward
+    input = module(input)
+  File "/home/by783/myenv/lib/python3.6/site-packages/torch/nn/modules/module.py", line 477, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/by783/myenv/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 301, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA error: out of memory
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
