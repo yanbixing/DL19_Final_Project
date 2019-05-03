@@ -61,8 +61,11 @@ else:
 def image_loader(path, batch_size):
     transform = transforms.Compose(
         [
-            transforms.Resize(input_size),
-            transforms.CenterCrop(input_size),
+            transforms.Resize(224),
+            transforms.RandomHorizontalFlip(),
+            transforms.RandomRotation(30),
+            transforms.RandomResizedCrop(224),
+
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
             # https://pytorch.org/docs/stable/torchvision/transforms.html

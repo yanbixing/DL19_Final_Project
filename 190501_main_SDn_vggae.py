@@ -237,12 +237,18 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25):
     decoder_layer_num_list = [5, 11, 17, 20]  # ConvTrans strink input
 
     for layer_num in encoder_layer_num_list:
-        print(layer_num)
-        model.encoder[layer_num].register_forward_hook(encoder_feature_hook)
-        print(model.encoder[layer_num])
+        # print(layer_num)
+        if torch.cuda.device_count() == 2:
+            model.module.encoder[layer_num].register_forward_hook(encoder_feature_hook)
+        else:
+            model.encoder[layer_num].register_forward_hook(encoder_feature_hook)
+            # print(model.encoder[layer_num])
 
     for layer_num in decoder_layer_num_list:
-        model.decoder[layer_num].register_forward_hook(decoder_feature_hook)
+        if torch.cuda.device_count() > 1:
+            model.module.decoder[layer_num].register_forward_hook(decoder_feature_hook)
+        else:
+            model.decoder[layer_num].register_forward_hook(decoder_feature_hook)
 
     for epoch in range(num_epochs):
         print('Epoch {}/{}'.format(epoch, num_epochs - 1))
@@ -271,7 +277,12 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25):
 
             #print('length after foward:', len(encoder_feature_list))
 
-            decoder_feature_list = decoder_feature_list[::-1]
+
+            if torch.cuda.device_count() == 2:
+                decoder_feature_list[0:4]=decoder_feature_list[0:4:-1]
+                decoder_feature_list[4:8] = decoder_feature_list[4:8:-1]
+            else:
+                decoder_feature_list = decoder_feature_list[::-1]
 
             # calculate stacked loss
             loss = 0
