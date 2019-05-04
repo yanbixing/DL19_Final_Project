@@ -224,7 +224,7 @@ def train_model(model, dataloaders, criterion, num_epochs=25):
             running_loss += i_o_loss.item() * inputs.size(0)
 
             del i_o_loss, inputs_reconstructed, _
-
+            # out of memory, detach? or detach + del
 
 
         epoch_loss = running_loss / len(dataloaders['unlabeled'].dataset)
@@ -245,6 +245,7 @@ def train_model(model, dataloaders, criterion, num_epochs=25):
             eval_loss += loss.item() * inputs.size(0)
 
             del loss, inputs_reconstructed, _
+
 
         epoch_eval_loss = eval_loss / len(dataloaders['train'].dataset)
         sys.stdout.write('Evaluation time: {:.0f}s \n'.format(time.time() - since))
