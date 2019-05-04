@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/190504_main_SDvggAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/190504_main_SDvggAE.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190501_main_SDn_vggae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4742">
+            <state relative-caret-position="-3260">
               <caret line="66" selection-start-line="66" selection-end-line="66" selection-end-column="44" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/190504_main_SDvggAE.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
+            <state relative-caret-position="631">
+              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -37,40 +38,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190501_run_main_SDvggAE.s">
+        <entry file="file://$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n00pc_small.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="98" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Note_190421.ipynb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Note_190421_clean_version.ipynb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Note_190422.ipynb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190504_run_main_SDvggAE.s">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190502_main_densenet_daug.py">
+        <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n30pc_small.s">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="285" lean-forward="true" selection-start-line="285" selection-end-line="285" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190502_run_main_densenet_daug_from_scratch.s">
+        <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n20pc_small.s">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="180">
+              <caret line="12" column="153" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="153" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190502_run_main_densenet_daug_pretrained.s">
+        <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n10pc_small.s">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -143,8 +165,8 @@
         <option value="$PROJECT_DIR$/190501_main_SDn_vggae.py" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small_lr007.s" />
         <option value="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small_lr001.s" />
-        <option value="$PROJECT_DIR$/190504_main_SDvggAE.py" />
         <option value="$PROJECT_DIR$/190501_run_main_SDvggAE.s" />
+        <option value="$PROJECT_DIR$/190504_main_SDvggAE.py" />
       </list>
     </option>
   </component>
@@ -159,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -171,6 +192,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +243,7 @@
     <frame x="26" y="23" width="1403" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37692872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.382072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -232,7 +254,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -280,9 +302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Note_190421_clean_version.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Sem2_DL/examples/dcgan/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -299,9 +318,6 @@
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Note_190421.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/190425_run_main_raw_vggae_en_pretrained.s">
       <provider selected="true" editor-type-id="text-editor">
@@ -359,20 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n20pc_small.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="153" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="153" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n30pc_small.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190421_main_raw_md_pfm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1261">
@@ -414,13 +416,6 @@
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n10pc_small.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -487,13 +482,6 @@
         <state relative-caret-position="-93" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n00pc_small.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="98" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small_lr01.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -522,16 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190501_main_SDn_vggae.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4742">
-          <caret line="66" selection-start-line="66" selection-end-line="66" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190502_main_densenet_daug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -542,17 +520,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190501_run_main_SDvggAE.s">
+    <entry file="file://$PROJECT_DIR$/190501_main_SDn_vggae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3260">
+          <caret line="66" selection-start-line="66" selection-end-line="66" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n00pc_small.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="98" selection-start-line="12" selection-start-column="98" selection-end-line="12" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note_190421.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note_190421_clean_version.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note_190422.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190504_run_main_SDvggAE.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n30pc_small.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n20pc_small.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="153" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n10pc_small.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/190504_main_SDvggAE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="103" column="34" selection-start-line="103" selection-start-column="34" selection-end-line="103" selection-end-column="34" />
+        <state relative-caret-position="631">
+          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

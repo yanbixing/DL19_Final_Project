@@ -223,6 +223,10 @@ def train_model(model, dataloaders, criterion, num_epochs=25):
             i_o_loss = criterion(inputs, inputs_reconstructed)
             running_loss += i_o_loss.item() * inputs.size(0)
 
+            del i_o_loss, inputs_reconstructed, _
+
+
+
         epoch_loss = running_loss / len(dataloaders['unlabeled'].dataset)
         sys.stdout.write('Training time: {:.0f}s \n'.format(time.time() - since))
         sys.stdout.write('Training loss: {:.4f} \n'.format(epoch_loss))
@@ -239,6 +243,8 @@ def train_model(model, dataloaders, criterion, num_epochs=25):
 
             loss = criterion(inputs, inputs_reconstructed)
             eval_loss += loss.item() * inputs.size(0)
+
+            del loss, inputs_reconstructed, _
 
         epoch_eval_loss = eval_loss / len(dataloaders['train'].dataset)
         sys.stdout.write('Evaluation time: {:.0f}s \n'.format(time.time() - since))
