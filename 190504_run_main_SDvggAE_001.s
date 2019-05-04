@@ -11,4 +11,4 @@ module purge
 source ~/myenv/bin/activate
 
 python -c "print('begin_SDvggAE_model')"
-python 1.90504_main_SDvggAE.py --model vgg --batch-size 512 --save 190504_SDvggAE_D01_lr001.pt --epochs 40 --lr 0.01
+python 190504_main_SDvggAE.py --model vgg --batch-size 512 --save 190504_SDvggAE_D01_lr001.pt --epochs 40 --lr 0.01
