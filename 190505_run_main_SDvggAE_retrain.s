@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:v100:2
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=24GB
-#SBATCH --time=48:00:00
+#SBATCH --time=120:00:00
 
 module purge
 source ~/myenv/bin/activate
