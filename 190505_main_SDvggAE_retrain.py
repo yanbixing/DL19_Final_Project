@@ -1,34 +1,47 @@
 from __future__ import print_function
 from __future__ import division
 
-#import numpy as np
+
 import argparse
-#import random
-#import shutil
 import time
-#import warnings
+import sys
+# import warnings
+# import random
+# import shutil
+# import numpy as np
+# import os
 
 
 import torch
 import torch.nn as nn
-
 import torch.nn.parallel
-#import torch.backends.cudnn as cudnn
-#import torch.distributed as dist
-#import torch.optim as optim
+# import torch.nn.functional as F
 
-#import torch.multiprocessing as mp
+# import torch.backends.cudnn as cudnn
+# import torch.distributed as dist
+# import torch.optim as optim
+# import torch.multiprocessing as mp
+
 import torch.utils.data
 import torch.utils.data.distributed
 
 import torchvision
-from torchvision import datasets, transforms#, models
-#import os
-import sys
+from torchvision import datasets, transforms, models
+
 
 from torch.autograd import Variable
-#import torch.nn.functional as F
 
+
+
+
+#########################################################################################################
+sys.stdout.write("PyTorch Version: {}\n".format(torch.__version__))
+sys.stdout.write("Torchvision Version: {}\n".format(torchvision.__version__))
+
+if torch.cuda.is_available():
+    sys.stdout.write('GPU mode \n')
+else:
+    sys.stdout.write('Warning, CPU mode, pls check\n')
 ########################################################################################
 ########################################################################################
 ########################################################################################
@@ -43,57 +56,56 @@ def str2bool(v):
 
 parser = argparse.ArgumentParser(description='DL19_FinalProject_PyTorch')
 
-parser.add_argument('--model', type=str, default='densenet',
+parser.add_argument('--model', type=str, default='vgg',
                     help='type of cnn ("resnet", "alexnet","vgg","squeezenet","densenet","inception")')
-# parser.add_argument('--model-folder', type=str, default='/scratch/by783/DL_Final_models/',
-#                     help='path to store model files')
 
-# parser.add_argument('--model-file', type=str, default = '190425_raw_vggae_fromscratch_s.pt',
-#                     help='path to autoencoder')
+parser.add_argument('--model-folder', type=str, default='/beegfs/by783/DL_Final_models/',
+                    help='path to store model files')
+
+parser.add_argument('--model-file', type=str, default = '190425_raw_vggae_fromscratch_s.pt',
+                    help='path to autoencoder')
 
 parser.add_argument('-b', '--batch-size', default=256, type=int,
                     metavar='N',
                     help='mini-batch size (default: 256), this is the total '
                          'batch size of all GPUs on the current node when '
                          'using Data Parallel or Distributed Data Parallel')
-parser.add_argument('--save-folder', type=str, default='/scratch/by783/DL_Final_models/',
+parser.add_argument('--save-folder', type=str, default='/beegfs/by783/DL_Final_models/',
                     help='path to save the final model')
 
 parser.add_argument('--save', type=str, default='model.pt',
                     help='path to save the final model')
 parser.add_argument('--num-classes', type=int, default=1000,
                     help='number of classes')
-parser.add_argument('--epochs', type=int, default=25,
+parser.add_argument('--epochs', type=int, default=50,
                     help='upper epoch limit')
-parser.add_argument("--feature-pinning", type=str, default='False',
-                    help="pin all the conv layers.")
+# parser.add_argument("--feature-pinning", type=str, default='False',
+#                     help="pin all the conv layers.")
 parser.add_argument('--lr', type=float, default=0.001,
                     help='learning rate')
-parser.add_argument('--noise-level', type=float, default=0.3,
-                    help='add noise to input')
+# parser.add_argument('--noise-level', type=float, default=0.3,
+#                     help='add noise to input')
 # no noise added now
-parser.add_argument('--dataset-path', type=str, default='/scratch/by783/DL_Final/ssl_data_96',
+parser.add_argument('--dataset-path', type=str, default='/beegfs/by783/DL_Final/ssl_data_96',
                     help='path to dataset')
 
 args = parser.parse_args()
-
+#args=parser.parse_args("--model vgg --model_folder /scratch/by783/DL_Final_models/ --model-file 190504_SDvggAE_D01.pt --batch-size 512 --save 190505SDvggAE_D01.pt_try --epochs 50 --lr 0.001".split())
 ########################################################################################
 
 model_name = args.model
 
-# model_load_path = args.model_folder + args.model_file
+model_load_path = args.model_folder + args.model_file
 
 save_path = args.save_folder + args.save
 
-feature_pinning=str2bool(args.feature_pinning)
+# feature_pinning=str2bool(args.feature_pinning)
 num_classes = args.num_classes
 
 num_epochs = args.epochs
 loader_batch_size = args.batch_size
 loader_image_path = args.dataset_path
-noise_level = args.noise_level
-
-
+# noise_level = args.noise_level
 ########################################################################################
 ########################################################################################
 ########################################################################################
@@ -203,6 +215,50 @@ class StackedAutoEncoder(nn.Module):
         return x_reconstruct
 
 ########################################################################################
+########################################################################################
+########################################################################################
+def image_loader(path, batch_size):
+    transform = transforms.Compose(
+        [
+            #transforms.Resize(input_size),
+            #transforms.CenterCrop(input_size),
+            # use model fitted with the image size, so no need to resize
+            transforms.ToTensor(),
+            transforms.Normalize([0.502, 0.474, 0.426], [0.227, 0.222, 0.226])
+            # https://pytorch.org/docs/stable/torchvision/transforms.html
+            # [mean],[std] for different channels
+        ]
+    )
+    sup_train_data = datasets.ImageFolder('{}/{}/train'.format(path, 'supervised'), transform=transform)
+    sup_val_data = datasets.ImageFolder('{}/{}/val'.format(path, 'supervised'), transform=transform)
+    unsup_data = datasets.ImageFolder('{}/{}/'.format(path, 'unsupervised'), transform=transform)
+    # source code: https://github.com/pytorch/vision/blob/master/torchvision/datasets/folder.py
+    # Main idea:
+    data_loader_sup_train = torch.utils.data.DataLoader(
+        sup_train_data,
+        batch_size=batch_size,
+        shuffle=True,
+        num_workers=0
+    )
+    data_loader_sup_val = torch.utils.data.DataLoader(
+        sup_val_data,
+        batch_size=batch_size,
+        shuffle=True,
+        num_workers=0
+    )
+    data_loader_unsup = torch.utils.data.DataLoader(
+        unsup_data,
+        batch_size=batch_size,
+        shuffle=True,
+        num_workers=0
+    )
+
+    print('sup_train_data.class_to_idx==sup_val_data.class_to_idx: ',
+          sup_train_data.class_to_idx == sup_val_data.class_to_idx)
+
+    return data_loader_sup_train, data_loader_sup_val, data_loader_unsup, sup_train_data.class_to_idx
+
+########################################################################################
 
 def train_model(model, dataloaders, criterion, num_epochs=25):
     since = time.time()
@@ -269,64 +325,8 @@ def train_model(model, dataloaders, criterion, num_epochs=25):
     return model, loss_history
 
 ########################################################################################
-
-def image_loader(path, batch_size):
-    transform = transforms.Compose(
-        [
-            #transforms.Resize(input_size),
-            #transforms.CenterCrop(input_size),
-            # use model fitted with the image size, so no need to resize
-            transforms.ToTensor(),
-            transforms.Normalize([0.502, 0.474, 0.426], [0.227, 0.222, 0.226])
-            # https://pytorch.org/docs/stable/torchvision/transforms.html
-            # [mean],[std] for different channels
-        ]
-    )
-    sup_train_data = datasets.ImageFolder('{}/{}/train'.format(path, 'supervised'), transform=transform)
-    sup_val_data = datasets.ImageFolder('{}/{}/val'.format(path, 'supervised'), transform=transform)
-    unsup_data = datasets.ImageFolder('{}/{}/'.format(path, 'unsupervised'), transform=transform)
-    # source code: https://github.com/pytorch/vision/blob/master/torchvision/datasets/folder.py
-    # Main idea:
-    data_loader_sup_train = torch.utils.data.DataLoader(
-        sup_train_data,
-        batch_size=batch_size,
-        shuffle=True,
-        num_workers=0
-    )
-    data_loader_sup_val = torch.utils.data.DataLoader(
-        sup_val_data,
-        batch_size=batch_size,
-        shuffle=True,
-        num_workers=0
-    )
-    data_loader_unsup = torch.utils.data.DataLoader(
-        unsup_data,
-        batch_size=batch_size,
-        shuffle=True,
-        num_workers=0
-    )
-
-    print('sup_train_data.class_to_idx==sup_val_data.class_to_idx: ',
-          sup_train_data.class_to_idx == sup_val_data.class_to_idx)
-
-    return data_loader_sup_train, data_loader_sup_val, data_loader_unsup, sup_train_data.class_to_idx
-
 ########################################################################################
-########################################################################################
-########################################################################################
-
-
-
-sys.stdout.write("PyTorch Version: {}\n".format(torch.__version__))
-sys.stdout.write("Torchvision Version: {}\n ".format(torchvision.__version__))
-
-if torch.cuda.is_available():
-    sys.stdout.write('GPU mode \n')
-else:
-    sys.stdout.write('Warning, CPU mode, pls check\n')
-
-
-##########################################################################################
+#########################################################################################################
 
 ####### load data ####
 
@@ -336,7 +336,8 @@ dataloaders={}
 
 dataloaders['train'], dataloaders['val'], dataloaders['unlabeled'], class_to_idx_dict = image_loader(loader_image_path,loader_batch_size)
 
-##############  load model  ############
+
+##############  set the model and load weights  ############
 
 criterion_ft = nn.MSELoss()
 
@@ -344,14 +345,19 @@ learning_rate_ft = args.lr
 
 model_ft = StackedAutoEncoder(criterion=criterion_ft,learning_rate=learning_rate_ft)
 
+try:
+    model_ft.load_state_dict(torch.load(model_load_path).module.state_dict())
+except:
+    model_ft.load_state_dict(torch.load(model_load_path).state_dict())
+
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 if torch.cuda.device_count() > 1:
-    model_ft = nn.DataParallel(model_ft)
+     model_ft = nn.DataParallel(model_ft)
 
 model_ft = model_ft.to(device)
 
-########################################
+################## run ######################
 
 sys.stdout.write('Begin to train...')
 
@@ -359,8 +365,5 @@ sys.stdout.write('Begin to train...')
 model_ft, hist = train_model(model_ft, dataloaders, criterion_ft, num_epochs=num_epochs)
 
 sys.stdout.write('Finished')
-
-
-
 
 
