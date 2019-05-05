@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="" />
+    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr001.s" beforeDir="false" afterPath="$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr001.s" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,18 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/190505_main_SDvggAE_retrain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2453">
-              <caret line="92" column="190" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="190" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190421_run_main_raw_alexnet_pfm.s">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,8 +73,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr001.s">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain.s">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -539,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190504_run_main_vgg_alladj_daug.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -631,10 +623,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr001.s">
+    <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr001.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
