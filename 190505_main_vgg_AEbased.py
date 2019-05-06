@@ -61,7 +61,7 @@ parser = argparse.ArgumentParser(description='DL19_FinalProject_PyTorch')
 parser.add_argument('--model', type=str, default='vgg',
                     help='type of cnn ("resnet", "alexnet","vgg","squeezenet","densenet","inception")')
 
-parser.add_argument('--AE-folder', type=str, default='/scratch/by783/DL_Final_models/',
+parser.add_argument('--AE-folder', type=str, default='/beegfs/by783/DL_Final_models/',
                     help='path to store model files')
 
 parser.add_argument('--AE-file', type=str, default = '190425_raw_vggae_fromscratch_s.pt',
@@ -94,7 +94,7 @@ parser.add_argument('--dataset-path', type=str, default='/beegfs/by783/DL_Final/
                     help='path to dataset')
 
 args = parser.parse_args()
-#args=parser.parse_args("--model vgg --model-file XXXXXXXX --batch-size 512 --feature-pinning True --save 190505_try2 --epochs 50 --lr 0.001 ".split())
+#args=parser.parse_args("--model vgg --AE-file XXXXXXXX --batch-size 512 --feature-pinning True --save 190505_try2 --epochs 50 --lr 0.001 ".split())
 ########################################################################################
 
 model_name = args.model
