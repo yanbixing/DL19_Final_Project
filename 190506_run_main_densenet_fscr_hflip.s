@@ -11,4 +11,4 @@ module purge
 source ~/myenv/bin/activate
 
 python -c "print('DN121_fscr_hflip')"
-python 190506_main_densenet_fscr_hflip.py --model densenet --model-folder --batch-size 128 --save 190506_main_densenet_fscr_hflip.pt --epochs 100 --feature-pinning False
+python 190506_main_densenet_fscr_hflip.py --model densenet --batch-size 128 --save 190506_main_densenet_fscr_hflip.pt --epochs 100 --feature-pinning False
