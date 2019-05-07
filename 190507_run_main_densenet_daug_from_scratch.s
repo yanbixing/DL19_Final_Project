@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=DN121_daug
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:v100:1
 #SBATCH --cpus-per-task=10
 #SBATCH --mem=24GB
 #SBATCH --time=48:00:00
