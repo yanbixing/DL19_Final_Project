@@ -103,17 +103,17 @@ def image_loader(path, batch_size):
         'train':transforms.Compose([
             transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
             transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(15),
-            transforms.RandomAffine(15),
-            transforms.RandomResizedCrop(size=224,scale=(0.8, 1.0)),
+            transforms.RandomRotation(10),
+            transforms.RandomAffine(10),
+            transforms.RandomResizedCrop(size=224,scale=(0.9, 1.0)),
             transforms.ToTensor(),
-            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+            transforms.Normalize([0.502, 0.474, 0.426], [0.227, 0.222, 0.226])
         ]),
         'val':transforms.Compose([
-            transforms.Resize(256),
-            transforms.CenterCrop(224),
+            transforms.Resize(224),
+            #transforms.CenterCrop(224),
             transforms.ToTensor(),
-            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+            transforms.Normalize([0.502, 0.474, 0.426], [0.227, 0.222, 0.226])
         ])
     }
     sup_train_data = datasets.ImageFolder('{}/{}/train'.format(path, 'supervised'), transform=transform['train'])
