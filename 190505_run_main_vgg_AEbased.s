@@ -11,4 +11,4 @@ module purge
 source ~/myenv/bin/activate
 
 python -c "print('vgg_AE_based')"
-python 190505_main_vgg_AEbased.py --model vgg --AE-file 190505SDvggAE_D01_lr001.pt --batch-size 256 --feature-pinning True --save 190506_vgg_AEB_lr001.pt --epochs 500 --lr 0.01
+python 190505_main_vgg_AEbased.py --model vgg --AE-file 190505SDvggAE_D01_lr001.pt --batch-size 256 --feature-pinning True --save 190507_vgg_AEB_lr001.pt --epochs 500 --lr 0.01
