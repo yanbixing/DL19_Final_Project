@@ -416,16 +416,16 @@ except:
     model_ae=torch.load(model_load_path)
 '''
 
-#model_ae = StackedAutoEncoder()
+# model_ae = StackedAutoEncoder()
 
-#model_ft = AE_Transfered_Network('vgg',model_ae)
+# model_ft = AE_Transfered_Network('vgg',model_ae)
 
 try:
     model_ft=torch.load(model_load_path).module
 except:
     model_ft=torch.load(model_load_path)
 
-del model_ae #save memory
+# del model_ae #save memory
 
 set_parameter_pin_grad(model_ft,False) # free all layers for fine tuning
 
