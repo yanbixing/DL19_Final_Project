@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=vgg_raw
+#SBATCH --job-name=vgg_raw_daug
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=10
