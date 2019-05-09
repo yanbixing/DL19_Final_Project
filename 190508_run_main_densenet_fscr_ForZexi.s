@@ -11,4 +11,4 @@ module purge
 source XXXXXXXXXXXXXXXXXXX
 
 python -c "print('DN121_fscr_hflip')"
-python 190506_main_densenet_fscr_hflip.py --model densenet --dataset-path XXXXXXXXX  --save-folder XXXXXXXX --save XXXXXXXXXX.pt --batch-size 64 --epochs 100 --feature-pinning False
+python 190508_main_densenet_fscr_ForZexi.py --model densenet --dataset-path XXXXXXXXX  --save-folder XXXXXXXX --save XXXXXXXXXX.pt --batch-size 64 --epochs 100 --feature-pinning False
