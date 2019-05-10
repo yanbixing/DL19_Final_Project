@@ -151,7 +151,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
 
     val_acc_history = []
 
-    best_model_wts = copy.deepcopy(model.state_dict())
+    #best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
 
     for epoch in range(num_epochs):
@@ -214,7 +214,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
             if phase == 'val':
                 if epoch_acc > best_acc:
                     best_acc = epoch_acc
-                    best_model_wts = copy.deepcopy(model.state_dict())
+                    #best_model_wts = copy.deepcopy(model.state_dict())
                     with open(save_path, 'wb') as f:
                         torch.save(model, f)
                 #else:
@@ -231,7 +231,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
     print('Best val Acc: {:4f}'.format(best_acc))
 
     # load best model weights
-    model.load_state_dict(best_model_wts)
+    #model.load_state_dict(best_model_wts)
     return model, val_acc_history
 
 
@@ -289,7 +289,7 @@ criterion = nn.CrossEntropyLoss()
 sys.stdout.write('Begin to train...')
 
 # Train and evaluate
-model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
+train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
 
 sys.stdout.write('Finished')
 
