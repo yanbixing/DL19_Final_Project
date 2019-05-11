@@ -1,0 +1,186 @@
+begin_vgg_fcadj_model
+PyTorch Version: 0.4.1Torchvision Version: GPU modeBegin to load data...sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	features.0.weight	features.0.bias	features.1.weight	features.1.bias	features.4.weight	features.4.bias	features.5.weight	features.5.bias	features.8.weight	features.8.bias	features.9.weight	features.9.bias	features.11.weight	features.11.bias	features.12.weight	features.12.bias	features.15.weight	features.15.bias	features.16.weight	features.16.bias	features.18.weight	features.18.bias	features.19.weight	features.19.bias	features.22.weight	features.22.bias	features.23.weight	features.23.bias	features.25.weight	features.25.bias	features.26.weight	features.26.bias	classifier.0.weight	classifier.0.bias	classifier.3.weight	classifier.3.bias	classifier.6.weight	classifier.6.biasBegin to train...Epoch 0/59
+----------
+train Loss: 2.6331 Acc: 0.3864training time: 315sval Loss: 3.1451 Acc: 0.3377training time: 453s
+Epoch 1/59
+----------
+train Loss: 2.3973 Acc: 0.4259training time: 766sval Loss: 3.0866 Acc: 0.3441training time: 906s
+Epoch 2/59
+----------
+train Loss: 2.3019 Acc: 0.4424training time: 1218sval Loss: 3.0473 Acc: 0.3514training time: 1356s
+Epoch 3/59
+----------
+train Loss: 2.2274 Acc: 0.4557training time: 1670sval Loss: 3.0315 Acc: 0.3549training time: 1808s
+Epoch 4/59
+----------
+train Loss: 2.1571 Acc: 0.4706training time: 2124sval Loss: 3.0040 Acc: 0.3588training time: 2266s
+Epoch 5/59
+----------
+train Loss: 2.1044 Acc: 0.4791training time: 2580sval Loss: 2.9888 Acc: 0.3626training time: 2717s
+Epoch 6/59
+----------
+train Loss: 2.0571 Acc: 0.4891training time: 3031sval Loss: 2.9898 Acc: 0.3640training time: 3172s
+Epoch 7/59
+----------
+train Loss: 2.0063 Acc: 0.4993training time: 3486sval Loss: 2.9803 Acc: 0.3659training time: 3626s
+Epoch 8/59
+----------
+train Loss: 1.9673 Acc: 0.5057training time: 3940sval Loss: 2.9803 Acc: 0.3664training time: 4080s
+Epoch 9/59
+----------
+train Loss: 1.9325 Acc: 0.5135training time: 4393sval Loss: 2.9797 Acc: 0.3673training time: 4531s
+Epoch 10/59
+----------
+train Loss: 1.9004 Acc: 0.5182training time: 4844sval Loss: 2.9774 Acc: 0.3703training time: 4982s
+Epoch 11/59
+----------
+train Loss: 1.8591 Acc: 0.5309training time: 5295sval Loss: 2.9726 Acc: 0.3716training time: 5435s
+Epoch 12/59
+----------
+train Loss: 1.8256 Acc: 0.5338training time: 5753sval Loss: 2.9686 Acc: 0.3729training time: 5893s
+Epoch 13/59
+----------
+train Loss: 1.7900 Acc: 0.5445training time: 6207sval Loss: 2.9682 Acc: 0.3734training time: 6346s
+Epoch 14/59
+----------
+train Loss: 1.7633 Acc: 0.5492training time: 6662sval Loss: 2.9710 Acc: 0.3751training time: 6798s
+Epoch 15/59
+----------
+train Loss: 1.7310 Acc: 0.5539training time: 7112sval Loss: 2.9805 Acc: 0.3746training time: 7247s
+Epoch 16/59
+----------
+train Loss: 1.6869 Acc: 0.5638training time: 7558sval Loss: 2.9956 Acc: 0.3761training time: 7698s
+Epoch 17/59
+----------
+train Loss: 1.6667 Acc: 0.5666training time: 8011sval Loss: 2.9878 Acc: 0.3772training time: 8157s
+Epoch 18/59
+----------
+train Loss: 1.6362 Acc: 0.5750training time: 8470sval Loss: 3.0006 Acc: 0.3760training time: 8616s
+Epoch 19/59
+----------
+train Loss: 1.6018 Acc: 0.5800training time: 8933sval Loss: 3.0108 Acc: 0.3761training time: 9083s
+Epoch 20/59
+----------
+train Loss: 1.5771 Acc: 0.5859training time: 9398sval Loss: 3.0108 Acc: 0.3760training time: 9542s
+Epoch 21/59
+----------
+train Loss: 1.5506 Acc: 0.5943training time: 9856sval Loss: 3.0174 Acc: 0.3768training time: 10002s
+Epoch 22/59
+----------
+train Loss: 1.5186 Acc: 0.6003training time: 10328sval Loss: 3.0289 Acc: 0.3755training time: 10482s
+Epoch 23/59
+----------
+train Loss: 1.4937 Acc: 0.6071training time: 10799sval Loss: 3.0396 Acc: 0.3765training time: 10942s
+Epoch 24/59
+----------
+train Loss: 1.4689 Acc: 0.6097training time: 11256sval Loss: 3.0505 Acc: 0.3763training time: 11392s
+Epoch 25/59
+----------
+train Loss: 1.4415 Acc: 0.6152training time: 11710sval Loss: 3.0550 Acc: 0.3763training time: 11864s
+Epoch 26/59
+----------
+train Loss: 1.4111 Acc: 0.6223training time: 12203sval Loss: 3.0673 Acc: 0.3773training time: 12369s
+Epoch 27/59
+----------
+train Loss: 1.3882 Acc: 0.6278training time: 12717sval Loss: 3.0660 Acc: 0.3791training time: 12886s
+Epoch 28/59
+----------
+train Loss: 1.3752 Acc: 0.6288training time: 13237sval Loss: 3.0930 Acc: 0.3756training time: 13415s
+Epoch 29/59
+----------
+train Loss: 1.3485 Acc: 0.6357training time: 13771sval Loss: 3.0826 Acc: 0.3763training time: 13942s
+Epoch 30/59
+----------
+train Loss: 1.3233 Acc: 0.6430training time: 14285sval Loss: 3.0922 Acc: 0.3766training time: 14456s
+Epoch 31/59
+----------
+train Loss: 1.2962 Acc: 0.6482training time: 14800sval Loss: 3.1132 Acc: 0.3767training time: 14971s
+Epoch 32/59
+----------
+train Loss: 1.2738 Acc: 0.6545training time: 15320sval Loss: 3.1383 Acc: 0.3781training time: 15483s
+Epoch 33/59
+----------
+train Loss: 1.2430 Acc: 0.6603training time: 15806sval Loss: 3.1537 Acc: 0.3760training time: 15954s
+Epoch 34/59
+----------
+train Loss: 1.2259 Acc: 0.6639training time: 16279sval Loss: 3.1639 Acc: 0.3752training time: 16428s
+Epoch 35/59
+----------
+train Loss: 1.1978 Acc: 0.6725training time: 16753sval Loss: 3.1665 Acc: 0.3774training time: 16903s
+Epoch 36/59
+----------
+train Loss: 1.1762 Acc: 0.6767training time: 17232sval Loss: 3.1871 Acc: 0.3766training time: 17402s
+Epoch 37/59
+----------
+train Loss: 1.1619 Acc: 0.6806training time: 17737sval Loss: 3.1940 Acc: 0.3751training time: 17893s
+Epoch 38/59
+----------
+train Loss: 1.1443 Acc: 0.6847training time: 18222sval Loss: 3.2064 Acc: 0.3765training time: 18367s
+Epoch 39/59
+----------
+train Loss: 1.1123 Acc: 0.6935training time: 18690sval Loss: 3.2116 Acc: 0.3768training time: 18835s
+Epoch 40/59
+----------
+train Loss: 1.0958 Acc: 0.6946training time: 19162sval Loss: 3.2327 Acc: 0.3753training time: 19318s
+Epoch 41/59
+----------
+train Loss: 1.0780 Acc: 0.6993training time: 19641sval Loss: 3.2379 Acc: 0.3757training time: 19791s
+Epoch 42/59
+----------
+train Loss: 1.0586 Acc: 0.7064training time: 20121sval Loss: 3.2494 Acc: 0.3780training time: 20273s
+Epoch 43/59
+----------
+train Loss: 1.0311 Acc: 0.7108training time: 20590sval Loss: 3.2908 Acc: 0.3748training time: 20738s
+Epoch 44/59
+----------
+train Loss: 1.0107 Acc: 0.7170training time: 21064sval Loss: 3.2937 Acc: 0.3754training time: 21212s
+Epoch 45/59
+----------
+train Loss: 0.9935 Acc: 0.7205training time: 21529sval Loss: 3.3107 Acc: 0.3735training time: 21682s
+Epoch 46/59
+----------
+train Loss: 0.9742 Acc: 0.7253training time: 22001sval Loss: 3.3285 Acc: 0.3734training time: 22152s
+Epoch 47/59
+----------
+train Loss: 0.9560 Acc: 0.7304training time: 22476sval Loss: 3.3388 Acc: 0.3736training time: 22626s
+Epoch 48/59
+----------
+train Loss: 0.9384 Acc: 0.7336training time: 22944sval Loss: 3.3419 Acc: 0.3740training time: 23090s
+Epoch 49/59
+----------
+train Loss: 0.9316 Acc: 0.7366training time: 23413sval Loss: 3.3622 Acc: 0.3721training time: 23562s
+Epoch 50/59
+----------
+train Loss: 0.8960 Acc: 0.7460training time: 23884sval Loss: 3.3838 Acc: 0.3719training time: 24035s
+Epoch 51/59
+----------
+train Loss: 0.8884 Acc: 0.7496training time: 24357sval Loss: 3.4056 Acc: 0.3707training time: 24504s
+Epoch 52/59
+----------
+train Loss: 0.8650 Acc: 0.7534training time: 24830sval Loss: 3.4043 Acc: 0.3713training time: 24977s
+Epoch 53/59
+----------
+train Loss: 0.8469 Acc: 0.7577training time: 25294sval Loss: 3.4169 Acc: 0.3732training time: 25437s
+Epoch 54/59
+----------
+train Loss: 0.8358 Acc: 0.7599training time: 25750sval Loss: 3.4312 Acc: 0.3736training time: 25888s
+Epoch 55/59
+----------
+train Loss: 0.8229 Acc: 0.7635training time: 26203sval Loss: 3.4785 Acc: 0.3691training time: 26342s
+Epoch 56/59
+----------
+train Loss: 0.8004 Acc: 0.7696training time: 26654sval Loss: 3.4743 Acc: 0.3701training time: 26795s
+Epoch 57/59
+----------
+train Loss: 0.7894 Acc: 0.7720training time: 27108sval Loss: 3.4764 Acc: 0.3713training time: 27246s
+Epoch 58/59
+----------
+train Loss: 0.7674 Acc: 0.7810training time: 27558sval Loss: 3.5273 Acc: 0.3695training time: 27697s
+Epoch 59/59
+----------
+train Loss: 0.7589 Acc: 0.7829training time: 28010sval Loss: 3.5203 Acc: 0.3692training time: 28153s
+Training complete in 469m 13s
+Best val Acc: 0.379125
+Finished

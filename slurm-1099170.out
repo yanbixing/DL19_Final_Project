@@ -1,0 +1,13 @@
+190505_main_SDvggAE_retrain.py
+usage: 190505_main_SDvggAE_retrain.py [-h] [--model MODEL]
+                                      [--model-folder MODEL_FOLDER]
+                                      [--model-file MODEL_FILE] [-b N]
+                                      [--save-folder SAVE_FOLDER]
+                                      [--save SAVE]
+                                      [--num-classes NUM_CLASSES]
+                                      [--epochs EPOCHS] [--lr LR]
+                                      [--dataset-path DATASET_PATH]
+190505_main_SDvggAE_retrain.py: error: unrecognized arguments: --momentum 0.6
+PyTorch Version: 0.4.1
+Torchvision Version: 0.2.2
+GPU mode 

@@ -1,4 +1,4 @@
-begin_SDn_vggae_fromscratch_30pc_model
-slurmstepd: error: *** JOB 997833 ON gpu-68 CANCELLED AT 2019-05-05T06:15:37 DUE TO TIME LIMIT ***
+begin_vgg_alladj_daug_model
+slurmstepd: error: *** JOB 1041527 ON gpu-10 CANCELLED AT 2019-05-06T21:01:00 DUE TO TIME LIMIT ***
 slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
 slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4

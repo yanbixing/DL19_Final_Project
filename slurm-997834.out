@@ -1,1 +1,4 @@
 begin_SDn_vggae_fromscratch_10pc_model
+slurmstepd: error: *** JOB 997834 ON gpu-72 CANCELLED AT 2019-05-04T21:00:08 ***
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4
+slurmstepd: error: The SLURM utilizes Linux cgroups for resource containment. For reference please read the explanation in the bug report: https://bugs.schedmd.com/show_bug.cgi?id=3214#c4

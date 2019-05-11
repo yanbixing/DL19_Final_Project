@@ -1,0 +1,10 @@
+vgg_AE_based_re
+PyTorch Version: 0.4.1
+Torchvision Version: 0.2.2
+GPU mode 
+Begin to load data...
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Traceback (most recent call last):
+  File "190509_main_vgg_AEbased_retrain.py", line 428, in <module>
+    del model_ae #save memory
+NameError: name 'model_ae' is not defined

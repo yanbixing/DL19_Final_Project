@@ -1,0 +1,3538 @@
+vgg_AE_based_FH2
+PyTorch Version: 0.4.1
+Torchvision Version: 0.2.2
+GPU mode 
+Begin to load data...
+sup_train_data.class_to_idx==sup_val_data.class_to_idx:  True
+Params to learn:
+	features.15.weight
+	features.15.bias
+	features.16.weight
+	features.16.bias
+	features.18.weight
+	features.18.bias
+	features.19.weight
+	features.19.bias
+	features.22.weight
+	features.22.bias
+	features.23.weight
+	features.23.bias
+	features.25.weight
+	features.25.bias
+	features.26.weight
+	features.26.bias
+	classifier.0.weight
+	classifier.0.bias
+	classifier.3.weight
+	classifier.3.bias
+	classifier.6.weight
+	classifier.6.bias
+Begin to train...
+Epoch 0/499
+----------
+train Loss: 6.9122 Acc: 0.0008
+training time: 174s
+val Loss: 6.8963 Acc: 0.0018
+training time: 334s
+
+Epoch 1/499
+----------
+train Loss: 6.8932 Acc: 0.0016
+training time: 506s
+val Loss: 6.8763 Acc: 0.0020
+training time: 661s
+
+Epoch 2/499
+----------
+train Loss: 6.8704 Acc: 0.0019
+training time: 840s
+val Loss: 6.8495 Acc: 0.0019
+training time: 1007s
+
+Epoch 3/499
+----------
+train Loss: 6.8459 Acc: 0.0022
+training time: 1176s
+val Loss: 6.8269 Acc: 0.0040
+training time: 1335s
+
+Epoch 4/499
+----------
+train Loss: 6.8281 Acc: 0.0026
+training time: 1503s
+val Loss: 6.8056 Acc: 0.0054
+training time: 1662s
+
+Epoch 5/499
+----------
+train Loss: 6.8055 Acc: 0.0032
+training time: 1829s
+val Loss: 6.7795 Acc: 0.0058
+training time: 1986s
+
+Epoch 6/499
+----------
+train Loss: 6.7775 Acc: 0.0034
+training time: 2159s
+val Loss: 6.7435 Acc: 0.0054
+training time: 2304s
+
+Epoch 7/499
+----------
+train Loss: 6.7382 Acc: 0.0045
+training time: 2470s
+val Loss: 6.6909 Acc: 0.0074
+training time: 2616s
+
+Epoch 8/499
+----------
+train Loss: 6.6826 Acc: 0.0052
+training time: 2780s
+val Loss: 6.6334 Acc: 0.0088
+training time: 2925s
+
+Epoch 9/499
+----------
+train Loss: 6.6123 Acc: 0.0062
+training time: 3090s
+val Loss: 6.5477 Acc: 0.0101
+training time: 3247s
+
+Epoch 10/499
+----------
+train Loss: 6.5330 Acc: 0.0078
+training time: 3418s
+val Loss: 6.4499 Acc: 0.0105
+training time: 3569s
+
+Epoch 11/499
+----------
+train Loss: 6.4406 Acc: 0.0088
+training time: 3743s
+val Loss: 6.3527 Acc: 0.0135
+training time: 3889s
+
+Epoch 12/499
+----------
+train Loss: 6.3399 Acc: 0.0105
+training time: 4056s
+val Loss: 6.2404 Acc: 0.0157
+training time: 4199s
+
+Epoch 13/499
+----------
+train Loss: 6.2457 Acc: 0.0119
+training time: 4360s
+val Loss: 6.1484 Acc: 0.0183
+training time: 4504s
+
+Epoch 14/499
+----------
+train Loss: 6.1567 Acc: 0.0144
+training time: 4666s
+val Loss: 6.0728 Acc: 0.0220
+training time: 4811s
+
+Epoch 15/499
+----------
+train Loss: 6.0719 Acc: 0.0175
+training time: 4972s
+val Loss: 6.2081 Acc: 0.0198
+training time: 5115s
+
+Epoch 16/499
+----------
+train Loss: 5.9930 Acc: 0.0195
+training time: 5279s
+val Loss: 5.9247 Acc: 0.0270
+training time: 5420s
+
+Epoch 17/499
+----------
+train Loss: 5.9089 Acc: 0.0225
+training time: 5581s
+val Loss: 5.8310 Acc: 0.0330
+training time: 5730s
+
+Epoch 18/499
+----------
+train Loss: 5.8304 Acc: 0.0260
+training time: 5891s
+val Loss: 5.7730 Acc: 0.0338
+training time: 6029s
+
+Epoch 19/499
+----------
+train Loss: 5.7496 Acc: 0.0287
+training time: 6187s
+val Loss: 5.6941 Acc: 0.0402
+training time: 6325s
+
+Epoch 20/499
+----------
+train Loss: 5.6628 Acc: 0.0331
+training time: 6484s
+val Loss: 5.6503 Acc: 0.0417
+training time: 6621s
+
+Epoch 21/499
+----------
+train Loss: 5.5873 Acc: 0.0365
+training time: 6781s
+val Loss: 5.5527 Acc: 0.0478
+training time: 6926s
+
+Epoch 22/499
+----------
+train Loss: 5.5058 Acc: 0.0405
+training time: 7091s
+val Loss: 5.4932 Acc: 0.0532
+training time: 7234s
+
+Epoch 23/499
+----------
+train Loss: 5.4267 Acc: 0.0480
+training time: 7397s
+val Loss: 5.4865 Acc: 0.0534
+training time: 7538s
+
+Epoch 24/499
+----------
+train Loss: 5.3534 Acc: 0.0506
+training time: 7704s
+val Loss: 5.4178 Acc: 0.0601
+training time: 7849s
+
+Epoch 25/499
+----------
+train Loss: 5.2690 Acc: 0.0574
+training time: 8014s
+val Loss: 5.5347 Acc: 0.0546
+training time: 8159s
+
+Epoch 26/499
+----------
+train Loss: 5.1882 Acc: 0.0643
+training time: 8324s
+val Loss: 5.2764 Acc: 0.0692
+training time: 8469s
+
+Epoch 27/499
+----------
+train Loss: 5.1105 Acc: 0.0671
+training time: 8635s
+val Loss: 5.3607 Acc: 0.0634
+training time: 8780s
+
+Epoch 28/499
+----------
+train Loss: 5.0340 Acc: 0.0727
+training time: 8949s
+val Loss: 5.2162 Acc: 0.0746
+training time: 9098s
+
+Epoch 29/499
+----------
+train Loss: 4.9648 Acc: 0.0790
+training time: 9261s
+val Loss: 5.1916 Acc: 0.0765
+training time: 9411s
+
+Epoch 30/499
+----------
+train Loss: 4.8948 Acc: 0.0827
+training time: 9577s
+val Loss: 5.1675 Acc: 0.0795
+training time: 9724s
+
+Epoch 31/499
+----------
+train Loss: 4.8235 Acc: 0.0891
+training time: 9892s
+val Loss: 5.3384 Acc: 0.0705
+training time: 10040s
+
+Epoch 32/499
+----------
+train Loss: 4.7513 Acc: 0.0955
+training time: 10207s
+val Loss: 5.2354 Acc: 0.0786
+training time: 10357s
+
+Epoch 33/499
+----------
+train Loss: 4.6824 Acc: 0.1028
+training time: 10525s
+val Loss: 5.3963 Acc: 0.0691
+training time: 10673s
+
+Epoch 34/499
+----------
+train Loss: 4.6197 Acc: 0.1052
+training time: 10838s
+val Loss: 5.0309 Acc: 0.0909
+training time: 10988s
+
+Epoch 35/499
+----------
+train Loss: 4.5351 Acc: 0.1135
+training time: 11155s
+val Loss: 5.0836 Acc: 0.0891
+training time: 11303s
+
+Epoch 36/499
+----------
+train Loss: 4.4628 Acc: 0.1221
+training time: 11470s
+val Loss: 5.2174 Acc: 0.0828
+training time: 11618s
+
+Epoch 37/499
+----------
+train Loss: 4.3895 Acc: 0.1270
+training time: 11785s
+val Loss: 5.4861 Acc: 0.0767
+training time: 11934s
+
+Epoch 38/499
+----------
+train Loss: 4.3040 Acc: 0.1354
+training time: 12103s
+val Loss: 5.3510 Acc: 0.0784
+training time: 12262s
+
+Epoch 39/499
+----------
+train Loss: 4.2164 Acc: 0.1452
+training time: 12433s
+val Loss: 5.1522 Acc: 0.0878
+training time: 12587s
+
+Epoch 40/499
+----------
+train Loss: 4.1441 Acc: 0.1532
+training time: 12764s
+val Loss: 5.5712 Acc: 0.0743
+training time: 12928s
+
+Epoch 41/499
+----------
+train Loss: 4.0641 Acc: 0.1591
+training time: 13103s
+val Loss: 5.9836 Acc: 0.0673
+training time: 13259s
+
+Epoch 42/499
+----------
+train Loss: 3.9801 Acc: 0.1691
+training time: 13431s
+val Loss: 5.3495 Acc: 0.0849
+training time: 13583s
+
+Epoch 43/499
+----------
+train Loss: 3.8747 Acc: 0.1775
+training time: 13753s
+val Loss: 5.8037 Acc: 0.0708
+training time: 13903s
+
+Epoch 44/499
+----------
+train Loss: 3.7767 Acc: 0.1900
+training time: 14076s
+val Loss: 5.9540 Acc: 0.0705
+training time: 14229s
+
+Epoch 45/499
+----------
+train Loss: 3.6783 Acc: 0.2021
+training time: 14406s
+val Loss: 5.6075 Acc: 0.0819
+training time: 14557s
+
+Epoch 46/499
+----------
+train Loss: 3.5888 Acc: 0.2117
+training time: 14730s
+val Loss: 5.9757 Acc: 0.0678
+training time: 14886s
+
+Epoch 47/499
+----------
+train Loss: 3.4743 Acc: 0.2269
+training time: 15056s
+val Loss: 5.6272 Acc: 0.0885
+training time: 15204s
+
+Epoch 48/499
+----------
+train Loss: 3.3865 Acc: 0.2388
+training time: 15367s
+val Loss: 6.7308 Acc: 0.0570
+training time: 15513s
+
+Epoch 49/499
+----------
+train Loss: 3.2732 Acc: 0.2516
+training time: 15686s
+val Loss: 5.8886 Acc: 0.0810
+training time: 15834s
+
+Epoch 50/499
+----------
+train Loss: 3.1844 Acc: 0.2636
+training time: 16006s
+val Loss: 5.9736 Acc: 0.0766
+training time: 16161s
+
+Epoch 51/499
+----------
+train Loss: 3.0561 Acc: 0.2827
+training time: 16337s
+val Loss: 8.1422 Acc: 0.0424
+training time: 16495s
+
+Epoch 52/499
+----------
+train Loss: 2.9437 Acc: 0.3008
+training time: 16675s
+val Loss: 6.4665 Acc: 0.0669
+training time: 16832s
+
+Epoch 53/499
+----------
+train Loss: 2.8223 Acc: 0.3199
+training time: 17013s
+val Loss: 7.2047 Acc: 0.0635
+training time: 17165s
+
+Epoch 54/499
+----------
+train Loss: 2.6984 Acc: 0.3408
+training time: 17341s
+val Loss: 6.5452 Acc: 0.0765
+training time: 17495s
+
+Epoch 55/499
+----------
+train Loss: 2.5988 Acc: 0.3568
+training time: 17669s
+val Loss: 6.6961 Acc: 0.0732
+training time: 17826s
+
+Epoch 56/499
+----------
+train Loss: 2.4602 Acc: 0.3822
+training time: 18005s
+val Loss: 9.2295 Acc: 0.0406
+training time: 18161s
+
+Epoch 57/499
+----------
+train Loss: 2.3636 Acc: 0.4009
+training time: 18347s
+val Loss: 7.8989 Acc: 0.0543
+training time: 18512s
+
+Epoch 58/499
+----------
+train Loss: 2.2182 Acc: 0.4277
+training time: 18695s
+val Loss: 7.9876 Acc: 0.0518
+training time: 18861s
+
+Epoch 59/499
+----------
+train Loss: 2.1197 Acc: 0.4470
+training time: 19042s
+val Loss: 9.3169 Acc: 0.0498
+training time: 19211s
+
+Epoch 60/499
+----------
+train Loss: 2.0016 Acc: 0.4725
+training time: 19392s
+val Loss: 7.8918 Acc: 0.0559
+training time: 19557s
+
+Epoch 61/499
+----------
+train Loss: 1.8924 Acc: 0.4943
+training time: 19745s
+val Loss: 10.7667 Acc: 0.0351
+training time: 19910s
+
+Epoch 62/499
+----------
+train Loss: 1.7628 Acc: 0.5246
+training time: 20098s
+val Loss: 8.3864 Acc: 0.0530
+training time: 20266s
+
+Epoch 63/499
+----------
+train Loss: 1.6777 Acc: 0.5423
+training time: 20448s
+val Loss: 8.9234 Acc: 0.0582
+training time: 20617s
+
+Epoch 64/499
+----------
+train Loss: 1.5661 Acc: 0.5705
+training time: 20803s
+val Loss: 8.6664 Acc: 0.0618
+training time: 20971s
+
+Epoch 65/499
+----------
+train Loss: 1.4563 Acc: 0.5959
+training time: 21157s
+val Loss: 11.6795 Acc: 0.0447
+training time: 21325s
+
+Epoch 66/499
+----------
+train Loss: 1.3324 Acc: 0.6257
+training time: 21508s
+val Loss: 8.9687 Acc: 0.0597
+training time: 21677s
+
+Epoch 67/499
+----------
+train Loss: 1.2561 Acc: 0.6442
+training time: 21859s
+val Loss: 10.7588 Acc: 0.0478
+training time: 22026s
+
+Epoch 68/499
+----------
+train Loss: 1.1713 Acc: 0.6667
+training time: 22209s
+val Loss: 11.4765 Acc: 0.0402
+training time: 22380s
+
+Epoch 69/499
+----------
+train Loss: 1.0799 Acc: 0.6924
+training time: 22561s
+val Loss: 10.2887 Acc: 0.0484
+training time: 22725s
+
+Epoch 70/499
+----------
+train Loss: 0.9818 Acc: 0.7163
+training time: 22910s
+val Loss: 11.1229 Acc: 0.0479
+training time: 23074s
+
+Epoch 71/499
+----------
+train Loss: 0.9013 Acc: 0.7394
+training time: 23256s
+val Loss: 13.1433 Acc: 0.0346
+training time: 23425s
+
+Epoch 72/499
+----------
+train Loss: 0.8310 Acc: 0.7595
+training time: 23604s
+val Loss: 17.0845 Acc: 0.0197
+training time: 23769s
+
+Epoch 73/499
+----------
+train Loss: 0.7812 Acc: 0.7722
+training time: 23951s
+val Loss: 13.7864 Acc: 0.0361
+training time: 24117s
+
+Epoch 74/499
+----------
+train Loss: 0.7361 Acc: 0.7854
+training time: 24300s
+val Loss: 11.0581 Acc: 0.0529
+training time: 24465s
+
+Epoch 75/499
+----------
+train Loss: 0.6633 Acc: 0.8083
+training time: 24647s
+val Loss: 11.8435 Acc: 0.0495
+training time: 24812s
+
+Epoch 76/499
+----------
+train Loss: 0.6066 Acc: 0.8212
+training time: 24996s
+val Loss: 12.8368 Acc: 0.0464
+training time: 25161s
+
+Epoch 77/499
+----------
+train Loss: 0.5704 Acc: 0.8324
+training time: 25345s
+val Loss: 12.0895 Acc: 0.0521
+training time: 25507s
+
+Epoch 78/499
+----------
+train Loss: 0.4954 Acc: 0.8549
+training time: 25689s
+val Loss: 13.0747 Acc: 0.0441
+training time: 25847s
+
+Epoch 79/499
+----------
+train Loss: 0.4598 Acc: 0.8652
+training time: 26025s
+val Loss: 12.3238 Acc: 0.0524
+training time: 26176s
+
+Epoch 80/499
+----------
+train Loss: 0.4270 Acc: 0.8744
+training time: 26351s
+val Loss: 13.4863 Acc: 0.0428
+training time: 26510s
+
+Epoch 81/499
+----------
+train Loss: 0.3902 Acc: 0.8857
+training time: 26681s
+val Loss: 14.3275 Acc: 0.0402
+training time: 26835s
+
+Epoch 82/499
+----------
+train Loss: 0.3780 Acc: 0.8891
+training time: 27004s
+val Loss: 12.5938 Acc: 0.0516
+training time: 27157s
+
+Epoch 83/499
+----------
+train Loss: 0.3316 Acc: 0.9039
+training time: 27331s
+val Loss: 14.0022 Acc: 0.0473
+training time: 27487s
+
+Epoch 84/499
+----------
+train Loss: 0.3066 Acc: 0.9119
+training time: 27663s
+val Loss: 14.1646 Acc: 0.0489
+training time: 27820s
+
+Epoch 85/499
+----------
+train Loss: 0.2788 Acc: 0.9191
+training time: 28001s
+val Loss: 15.7425 Acc: 0.0387
+training time: 28160s
+
+Epoch 86/499
+----------
+train Loss: 0.2624 Acc: 0.9249
+training time: 28338s
+val Loss: 15.5958 Acc: 0.0433
+training time: 28500s
+
+Epoch 87/499
+----------
+train Loss: 0.2511 Acc: 0.9276
+training time: 28677s
+val Loss: 14.5258 Acc: 0.0477
+training time: 28838s
+
+Epoch 88/499
+----------
+train Loss: 0.2147 Acc: 0.9394
+training time: 29015s
+val Loss: 14.3898 Acc: 0.0525
+training time: 29171s
+
+Epoch 89/499
+----------
+train Loss: 0.2011 Acc: 0.9444
+training time: 29350s
+val Loss: 14.5209 Acc: 0.0423
+training time: 29509s
+
+Epoch 90/499
+----------
+train Loss: 0.1947 Acc: 0.9462
+training time: 29688s
+val Loss: 16.0432 Acc: 0.0400
+training time: 29848s
+
+Epoch 91/499
+----------
+train Loss: 0.1844 Acc: 0.9479
+training time: 30033s
+val Loss: 15.6201 Acc: 0.0434
+training time: 30198s
+
+Epoch 92/499
+----------
+train Loss: 0.1704 Acc: 0.9521
+training time: 30384s
+val Loss: 15.7515 Acc: 0.0418
+training time: 30547s
+
+Epoch 93/499
+----------
+train Loss: 0.1581 Acc: 0.9569
+training time: 30734s
+val Loss: 15.3286 Acc: 0.0450
+training time: 30901s
+
+Epoch 94/499
+----------
+train Loss: 0.1580 Acc: 0.9559
+training time: 31081s
+val Loss: 14.9219 Acc: 0.0466
+training time: 31248s
+
+Epoch 95/499
+----------
+train Loss: 0.1459 Acc: 0.9587
+training time: 31435s
+val Loss: 15.5328 Acc: 0.0448
+training time: 31602s
+
+Epoch 96/499
+----------
+train Loss: 0.1373 Acc: 0.9629
+training time: 31784s
+val Loss: 15.5049 Acc: 0.0465
+training time: 31951s
+
+Epoch 97/499
+----------
+train Loss: 0.1349 Acc: 0.9623
+training time: 32135s
+val Loss: 18.8825 Acc: 0.0293
+training time: 32303s
+
+Epoch 98/499
+----------
+train Loss: 0.1182 Acc: 0.9681
+training time: 32487s
+val Loss: 14.9950 Acc: 0.0497
+training time: 32654s
+
+Epoch 99/499
+----------
+train Loss: 0.1004 Acc: 0.9736
+training time: 32841s
+val Loss: 14.8422 Acc: 0.0535
+training time: 33015s
+
+Epoch 100/499
+----------
+train Loss: 0.1001 Acc: 0.9739
+training time: 33201s
+val Loss: 15.3054 Acc: 0.0521
+training time: 33367s
+
+Epoch 101/499
+----------
+train Loss: 0.1057 Acc: 0.9716
+training time: 33547s
+val Loss: 16.5330 Acc: 0.0437
+training time: 33710s
+
+Epoch 102/499
+----------
+train Loss: 0.1010 Acc: 0.9733
+training time: 33891s
+val Loss: 15.1134 Acc: 0.0536
+training time: 34052s
+
+Epoch 103/499
+----------
+train Loss: 0.0976 Acc: 0.9737
+training time: 34235s
+val Loss: 16.4643 Acc: 0.0444
+training time: 34400s
+
+Epoch 104/499
+----------
+train Loss: 0.0813 Acc: 0.9796
+training time: 34582s
+val Loss: 15.4969 Acc: 0.0507
+training time: 34738s
+
+Epoch 105/499
+----------
+train Loss: 0.0722 Acc: 0.9819
+training time: 34912s
+val Loss: 16.5370 Acc: 0.0454
+training time: 35062s
+
+Epoch 106/499
+----------
+train Loss: 0.0680 Acc: 0.9832
+training time: 35237s
+val Loss: 16.4181 Acc: 0.0458
+training time: 35390s
+
+Epoch 107/499
+----------
+train Loss: 0.0673 Acc: 0.9831
+training time: 35561s
+val Loss: 16.0813 Acc: 0.0486
+training time: 35713s
+
+Epoch 108/499
+----------
+train Loss: 0.0718 Acc: 0.9814
+training time: 35884s
+val Loss: 15.4949 Acc: 0.0514
+training time: 36036s
+
+Epoch 109/499
+----------
+train Loss: 0.0687 Acc: 0.9826
+training time: 36207s
+val Loss: 17.6412 Acc: 0.0420
+training time: 36357s
+
+Epoch 110/499
+----------
+train Loss: 0.0741 Acc: 0.9799
+training time: 36530s
+val Loss: 16.6987 Acc: 0.0487
+training time: 36686s
+
+Epoch 111/499
+----------
+train Loss: 0.0608 Acc: 0.9853
+training time: 36857s
+val Loss: 16.2628 Acc: 0.0517
+training time: 37010s
+
+Epoch 112/499
+----------
+train Loss: 0.0571 Acc: 0.9860
+training time: 37178s
+val Loss: 16.8101 Acc: 0.0482
+training time: 37324s
+
+Epoch 113/499
+----------
+train Loss: 0.0487 Acc: 0.9884
+training time: 37490s
+val Loss: 16.4595 Acc: 0.0500
+training time: 37638s
+
+Epoch 114/499
+----------
+train Loss: 0.0586 Acc: 0.9847
+training time: 37800s
+val Loss: 17.2897 Acc: 0.0458
+training time: 37943s
+
+Epoch 115/499
+----------
+train Loss: 0.0564 Acc: 0.9860
+training time: 38100s
+val Loss: 16.5776 Acc: 0.0488
+training time: 38243s
+
+Epoch 116/499
+----------
+train Loss: 0.0560 Acc: 0.9854
+training time: 38405s
+val Loss: 17.8745 Acc: 0.0404
+training time: 38545s
+
+Epoch 117/499
+----------
+train Loss: 0.0508 Acc: 0.9881
+training time: 38706s
+val Loss: 16.6600 Acc: 0.0505
+training time: 38852s
+
+Epoch 118/499
+----------
+train Loss: 0.0446 Acc: 0.9893
+training time: 39019s
+val Loss: 15.7341 Acc: 0.0542
+training time: 39164s
+
+Epoch 119/499
+----------
+train Loss: 0.0425 Acc: 0.9900
+training time: 39329s
+val Loss: 18.4507 Acc: 0.0455
+training time: 39472s
+
+Epoch 120/499
+----------
+train Loss: 0.0418 Acc: 0.9902
+training time: 39635s
+val Loss: 16.9187 Acc: 0.0494
+training time: 39779s
+
+Epoch 121/499
+----------
+train Loss: 0.0418 Acc: 0.9899
+training time: 39944s
+val Loss: 19.0096 Acc: 0.0405
+training time: 40088s
+
+Epoch 122/499
+----------
+train Loss: 0.0428 Acc: 0.9896
+training time: 40256s
+val Loss: 18.0377 Acc: 0.0419
+training time: 40406s
+
+Epoch 123/499
+----------
+train Loss: 0.0379 Acc: 0.9914
+training time: 40574s
+val Loss: 16.1654 Acc: 0.0558
+training time: 40722s
+
+Epoch 124/499
+----------
+train Loss: 0.0399 Acc: 0.9904
+training time: 40890s
+val Loss: 17.1164 Acc: 0.0494
+training time: 41042s
+
+Epoch 125/499
+----------
+train Loss: 0.0408 Acc: 0.9901
+training time: 41219s
+val Loss: 16.7908 Acc: 0.0479
+training time: 41370s
+
+Epoch 126/499
+----------
+train Loss: 0.0409 Acc: 0.9897
+training time: 41539s
+val Loss: 18.3881 Acc: 0.0453
+training time: 41688s
+
+Epoch 127/499
+----------
+train Loss: 0.0399 Acc: 0.9903
+training time: 41854s
+val Loss: 16.0723 Acc: 0.0566
+training time: 41997s
+
+Epoch 128/499
+----------
+train Loss: 0.0339 Acc: 0.9924
+training time: 42163s
+val Loss: 16.8771 Acc: 0.0514
+training time: 42312s
+
+Epoch 129/499
+----------
+train Loss: 0.0303 Acc: 0.9931
+training time: 42476s
+val Loss: 16.4631 Acc: 0.0512
+training time: 42621s
+
+Epoch 130/499
+----------
+train Loss: 0.0306 Acc: 0.9933
+training time: 42788s
+val Loss: 16.1398 Acc: 0.0547
+training time: 42935s
+
+Epoch 131/499
+----------
+train Loss: 0.0316 Acc: 0.9924
+training time: 43098s
+val Loss: 17.3909 Acc: 0.0510
+training time: 43246s
+
+Epoch 132/499
+----------
+train Loss: 0.0302 Acc: 0.9930
+training time: 43415s
+val Loss: 16.9851 Acc: 0.0520
+training time: 43567s
+
+Epoch 133/499
+----------
+train Loss: 0.0317 Acc: 0.9926
+training time: 43736s
+val Loss: 16.1147 Acc: 0.0545
+training time: 43883s
+
+Epoch 134/499
+----------
+train Loss: 0.0264 Acc: 0.9938
+training time: 44051s
+val Loss: 17.0118 Acc: 0.0505
+training time: 44203s
+
+Epoch 135/499
+----------
+train Loss: 0.0236 Acc: 0.9950
+training time: 44372s
+val Loss: 16.1300 Acc: 0.0559
+training time: 44523s
+
+Epoch 136/499
+----------
+train Loss: 0.0228 Acc: 0.9954
+training time: 44695s
+val Loss: 16.4899 Acc: 0.0532
+training time: 44845s
+
+Epoch 137/499
+----------
+train Loss: 0.0222 Acc: 0.9954
+training time: 45014s
+val Loss: 17.9699 Acc: 0.0456
+training time: 45166s
+
+Epoch 138/499
+----------
+train Loss: 0.0230 Acc: 0.9951
+training time: 45337s
+val Loss: 17.4679 Acc: 0.0526
+training time: 45495s
+
+Epoch 139/499
+----------
+train Loss: 0.0223 Acc: 0.9951
+training time: 45665s
+val Loss: 16.6771 Acc: 0.0544
+training time: 45818s
+
+Epoch 140/499
+----------
+train Loss: 0.0204 Acc: 0.9959
+training time: 45987s
+val Loss: 17.0266 Acc: 0.0524
+training time: 46142s
+
+Epoch 141/499
+----------
+train Loss: 0.0199 Acc: 0.9961
+training time: 46314s
+val Loss: 16.3079 Acc: 0.0570
+training time: 46467s
+
+Epoch 142/499
+----------
+train Loss: 0.0197 Acc: 0.9960
+training time: 46639s
+val Loss: 17.0519 Acc: 0.0544
+training time: 46789s
+
+Epoch 143/499
+----------
+train Loss: 0.0196 Acc: 0.9959
+training time: 46963s
+val Loss: 17.3179 Acc: 0.0522
+training time: 47114s
+
+Epoch 144/499
+----------
+train Loss: 0.0174 Acc: 0.9969
+training time: 47288s
+val Loss: 16.4101 Acc: 0.0569
+training time: 47443s
+
+Epoch 145/499
+----------
+train Loss: 0.0173 Acc: 0.9968
+training time: 47616s
+val Loss: 16.4666 Acc: 0.0571
+training time: 47773s
+
+Epoch 146/499
+----------
+train Loss: 0.0159 Acc: 0.9969
+training time: 47943s
+val Loss: 17.1974 Acc: 0.0547
+training time: 48098s
+
+Epoch 147/499
+----------
+train Loss: 0.0166 Acc: 0.9967
+training time: 48277s
+val Loss: 16.9585 Acc: 0.0539
+training time: 48426s
+
+Epoch 148/499
+----------
+train Loss: 0.0167 Acc: 0.9966
+training time: 48591s
+val Loss: 17.4470 Acc: 0.0531
+training time: 48745s
+
+Epoch 149/499
+----------
+train Loss: 0.0156 Acc: 0.9971
+training time: 48915s
+val Loss: 17.5834 Acc: 0.0523
+training time: 49066s
+
+Epoch 150/499
+----------
+train Loss: 0.0149 Acc: 0.9971
+training time: 49237s
+val Loss: 17.1375 Acc: 0.0556
+training time: 49393s
+
+Epoch 151/499
+----------
+train Loss: 0.0161 Acc: 0.9968
+training time: 49563s
+val Loss: 16.6790 Acc: 0.0561
+training time: 49720s
+
+Epoch 152/499
+----------
+train Loss: 0.0141 Acc: 0.9973
+training time: 49894s
+val Loss: 16.7787 Acc: 0.0556
+training time: 50050s
+
+Epoch 153/499
+----------
+train Loss: 0.0136 Acc: 0.9975
+training time: 50224s
+val Loss: 17.3560 Acc: 0.0524
+training time: 50372s
+
+Epoch 154/499
+----------
+train Loss: 0.0122 Acc: 0.9978
+training time: 50544s
+val Loss: 16.6710 Acc: 0.0578
+training time: 50698s
+
+Epoch 155/499
+----------
+train Loss: 0.0121 Acc: 0.9978
+training time: 50875s
+val Loss: 17.3796 Acc: 0.0540
+training time: 51035s
+
+Epoch 156/499
+----------
+train Loss: 0.0119 Acc: 0.9979
+training time: 51209s
+val Loss: 17.6157 Acc: 0.0525
+training time: 51362s
+
+Epoch 157/499
+----------
+train Loss: 0.0121 Acc: 0.9977
+training time: 51535s
+val Loss: 17.2078 Acc: 0.0549
+training time: 51688s
+
+Epoch 158/499
+----------
+train Loss: 0.0124 Acc: 0.9975
+training time: 51863s
+val Loss: 17.1848 Acc: 0.0531
+training time: 52018s
+
+Epoch 159/499
+----------
+train Loss: 0.0123 Acc: 0.9976
+training time: 52195s
+val Loss: 17.1187 Acc: 0.0555
+training time: 52356s
+
+Epoch 160/499
+----------
+train Loss: 0.0126 Acc: 0.9975
+training time: 52533s
+val Loss: 17.9024 Acc: 0.0515
+training time: 52696s
+
+Epoch 161/499
+----------
+train Loss: 0.0131 Acc: 0.9975
+training time: 52867s
+val Loss: 17.1066 Acc: 0.0558
+training time: 53014s
+
+Epoch 162/499
+----------
+train Loss: 0.0120 Acc: 0.9975
+training time: 53183s
+val Loss: 17.2977 Acc: 0.0558
+training time: 53334s
+
+Epoch 163/499
+----------
+train Loss: 0.0123 Acc: 0.9978
+training time: 53504s
+val Loss: 16.9318 Acc: 0.0574
+training time: 53652s
+
+Epoch 164/499
+----------
+train Loss: 0.0124 Acc: 0.9973
+training time: 53824s
+val Loss: 18.5905 Acc: 0.0490
+training time: 53972s
+
+Epoch 165/499
+----------
+train Loss: 0.0126 Acc: 0.9973
+training time: 54143s
+val Loss: 17.2620 Acc: 0.0565
+training time: 54294s
+
+Epoch 166/499
+----------
+train Loss: 0.0136 Acc: 0.9973
+training time: 54466s
+val Loss: 17.4083 Acc: 0.0546
+training time: 54620s
+
+Epoch 167/499
+----------
+train Loss: 0.0127 Acc: 0.9973
+training time: 54798s
+val Loss: 17.1473 Acc: 0.0552
+training time: 54953s
+
+Epoch 168/499
+----------
+train Loss: 0.0125 Acc: 0.9977
+training time: 55124s
+val Loss: 16.9795 Acc: 0.0559
+training time: 55273s
+
+Epoch 169/499
+----------
+train Loss: 0.0129 Acc: 0.9973
+training time: 55443s
+val Loss: 17.0566 Acc: 0.0575
+training time: 55595s
+
+Epoch 170/499
+----------
+train Loss: 0.0121 Acc: 0.9975
+training time: 55769s
+val Loss: 17.3342 Acc: 0.0546
+training time: 55923s
+
+Epoch 171/499
+----------
+train Loss: 0.0124 Acc: 0.9975
+training time: 56093s
+val Loss: 17.5026 Acc: 0.0565
+training time: 56245s
+
+Epoch 172/499
+----------
+train Loss: 0.0111 Acc: 0.9978
+training time: 56415s
+val Loss: 16.9522 Acc: 0.0587
+training time: 56568s
+
+Epoch 173/499
+----------
+train Loss: 0.0110 Acc: 0.9979
+training time: 56740s
+val Loss: 17.6371 Acc: 0.0515
+training time: 56892s
+
+Epoch 174/499
+----------
+train Loss: 0.0107 Acc: 0.9980
+training time: 57066s
+val Loss: 17.4140 Acc: 0.0546
+training time: 57215s
+
+Epoch 175/499
+----------
+train Loss: 0.0110 Acc: 0.9978
+training time: 57379s
+val Loss: 17.3394 Acc: 0.0545
+training time: 57525s
+
+Epoch 176/499
+----------
+train Loss: 0.0104 Acc: 0.9980
+training time: 57692s
+val Loss: 18.0067 Acc: 0.0491
+training time: 57840s
+
+Epoch 177/499
+----------
+train Loss: 0.0103 Acc: 0.9979
+training time: 58008s
+val Loss: 17.1286 Acc: 0.0582
+training time: 58162s
+
+Epoch 178/499
+----------
+train Loss: 0.0097 Acc: 0.9982
+training time: 58337s
+val Loss: 17.1960 Acc: 0.0553
+training time: 58490s
+
+Epoch 179/499
+----------
+train Loss: 0.0090 Acc: 0.9982
+training time: 58667s
+val Loss: 17.3779 Acc: 0.0561
+training time: 58822s
+
+Epoch 180/499
+----------
+train Loss: 0.0083 Acc: 0.9984
+training time: 58996s
+val Loss: 17.3025 Acc: 0.0581
+training time: 59151s
+
+Epoch 181/499
+----------
+train Loss: 0.0083 Acc: 0.9984
+training time: 59319s
+val Loss: 17.1991 Acc: 0.0577
+training time: 59469s
+
+Epoch 182/499
+----------
+train Loss: 0.0084 Acc: 0.9984
+training time: 59638s
+val Loss: 17.4928 Acc: 0.0562
+training time: 59791s
+
+Epoch 183/499
+----------
+train Loss: 0.0086 Acc: 0.9984
+training time: 59957s
+val Loss: 17.8063 Acc: 0.0553
+training time: 60117s
+
+Epoch 184/499
+----------
+train Loss: 0.0078 Acc: 0.9984
+training time: 60294s
+val Loss: 17.5691 Acc: 0.0556
+training time: 60449s
+
+Epoch 185/499
+----------
+train Loss: 0.0081 Acc: 0.9985
+training time: 60621s
+val Loss: 17.1302 Acc: 0.0588
+training time: 60775s
+
+Epoch 186/499
+----------
+train Loss: 0.0095 Acc: 0.9981
+training time: 60949s
+val Loss: 17.6634 Acc: 0.0548
+training time: 61101s
+
+Epoch 187/499
+----------
+train Loss: 0.0080 Acc: 0.9983
+training time: 61275s
+val Loss: 17.2893 Acc: 0.0574
+training time: 61430s
+
+Epoch 188/499
+----------
+train Loss: 0.0084 Acc: 0.9983
+training time: 61607s
+val Loss: 17.4859 Acc: 0.0577
+training time: 61757s
+
+Epoch 189/499
+----------
+train Loss: 0.0089 Acc: 0.9983
+training time: 61929s
+val Loss: 17.4264 Acc: 0.0566
+training time: 62079s
+
+Epoch 190/499
+----------
+train Loss: 0.0090 Acc: 0.9982
+training time: 62252s
+val Loss: 17.5937 Acc: 0.0552
+training time: 62402s
+
+Epoch 191/499
+----------
+train Loss: 0.0078 Acc: 0.9984
+training time: 62571s
+val Loss: 17.6777 Acc: 0.0547
+training time: 62724s
+
+Epoch 192/499
+----------
+train Loss: 0.0079 Acc: 0.9985
+training time: 62890s
+val Loss: 17.2593 Acc: 0.0571
+training time: 63037s
+
+Epoch 193/499
+----------
+train Loss: 0.0072 Acc: 0.9985
+training time: 63202s
+val Loss: 17.2517 Acc: 0.0568
+training time: 63351s
+
+Epoch 194/499
+----------
+train Loss: 0.0078 Acc: 0.9982
+training time: 63519s
+val Loss: 17.5750 Acc: 0.0537
+training time: 63667s
+
+Epoch 195/499
+----------
+train Loss: 0.0086 Acc: 0.9982
+training time: 63835s
+val Loss: 17.5113 Acc: 0.0575
+training time: 63983s
+
+Epoch 196/499
+----------
+train Loss: 0.0086 Acc: 0.9982
+training time: 64148s
+val Loss: 17.4406 Acc: 0.0573
+training time: 64295s
+
+Epoch 197/499
+----------
+train Loss: 0.0068 Acc: 0.9986
+training time: 64461s
+val Loss: 17.4100 Acc: 0.0568
+training time: 64605s
+
+Epoch 198/499
+----------
+train Loss: 0.0075 Acc: 0.9983
+training time: 64770s
+val Loss: 18.1222 Acc: 0.0553
+training time: 64915s
+
+Epoch 199/499
+----------
+train Loss: 0.0071 Acc: 0.9986
+training time: 65080s
+val Loss: 17.6847 Acc: 0.0556
+training time: 65228s
+
+Epoch 200/499
+----------
+train Loss: 0.0070 Acc: 0.9987
+training time: 65397s
+val Loss: 17.3926 Acc: 0.0571
+training time: 65546s
+
+Epoch 201/499
+----------
+train Loss: 0.0072 Acc: 0.9985
+training time: 65715s
+val Loss: 17.6286 Acc: 0.0564
+training time: 65866s
+
+Epoch 202/499
+----------
+train Loss: 0.0078 Acc: 0.9983
+training time: 66032s
+val Loss: 17.8131 Acc: 0.0555
+training time: 66178s
+
+Epoch 203/499
+----------
+train Loss: 0.0077 Acc: 0.9982
+training time: 66340s
+val Loss: 18.6748 Acc: 0.0527
+training time: 66491s
+
+Epoch 204/499
+----------
+train Loss: 0.0083 Acc: 0.9983
+training time: 66662s
+val Loss: 17.3718 Acc: 0.0571
+training time: 66813s
+
+Epoch 205/499
+----------
+train Loss: 0.0077 Acc: 0.9984
+training time: 66979s
+val Loss: 17.6586 Acc: 0.0559
+training time: 67132s
+
+Epoch 206/499
+----------
+train Loss: 0.0076 Acc: 0.9983
+training time: 67301s
+val Loss: 17.4105 Acc: 0.0558
+training time: 67451s
+
+Epoch 207/499
+----------
+train Loss: 0.0068 Acc: 0.9987
+training time: 67620s
+val Loss: 17.7176 Acc: 0.0565
+training time: 67773s
+
+Epoch 208/499
+----------
+train Loss: 0.0068 Acc: 0.9986
+training time: 67942s
+val Loss: 17.7554 Acc: 0.0565
+training time: 68094s
+
+Epoch 209/499
+----------
+train Loss: 0.0064 Acc: 0.9986
+training time: 68264s
+val Loss: 17.4151 Acc: 0.0585
+training time: 68411s
+
+Epoch 210/499
+----------
+train Loss: 0.0069 Acc: 0.9984
+training time: 68583s
+val Loss: 17.7052 Acc: 0.0550
+training time: 68736s
+
+Epoch 211/499
+----------
+train Loss: 0.0071 Acc: 0.9984
+training time: 68904s
+val Loss: 17.7960 Acc: 0.0561
+training time: 69054s
+
+Epoch 212/499
+----------
+train Loss: 0.0069 Acc: 0.9985
+training time: 69224s
+val Loss: 17.4259 Acc: 0.0565
+training time: 69375s
+
+Epoch 213/499
+----------
+train Loss: 0.0067 Acc: 0.9985
+training time: 69543s
+val Loss: 17.9171 Acc: 0.0569
+training time: 69686s
+
+Epoch 214/499
+----------
+train Loss: 0.0074 Acc: 0.9985
+training time: 69854s
+val Loss: 17.7137 Acc: 0.0590
+training time: 70002s
+
+Epoch 215/499
+----------
+train Loss: 0.0065 Acc: 0.9985
+training time: 70170s
+val Loss: 18.1561 Acc: 0.0547
+training time: 70317s
+
+Epoch 216/499
+----------
+train Loss: 0.0067 Acc: 0.9985
+training time: 70483s
+val Loss: 17.7486 Acc: 0.0560
+training time: 70627s
+
+Epoch 217/499
+----------
+train Loss: 0.0073 Acc: 0.9983
+training time: 70791s
+val Loss: 18.0441 Acc: 0.0563
+training time: 70939s
+
+Epoch 218/499
+----------
+train Loss: 0.0071 Acc: 0.9982
+training time: 71107s
+val Loss: 17.6790 Acc: 0.0543
+training time: 71253s
+
+Epoch 219/499
+----------
+train Loss: 0.0067 Acc: 0.9984
+training time: 71423s
+val Loss: 17.5381 Acc: 0.0572
+training time: 71569s
+
+Epoch 220/499
+----------
+train Loss: 0.0065 Acc: 0.9985
+training time: 71734s
+val Loss: 17.2467 Acc: 0.0590
+training time: 71879s
+
+Epoch 221/499
+----------
+train Loss: 0.0062 Acc: 0.9985
+training time: 72044s
+val Loss: 17.7327 Acc: 0.0567
+training time: 72193s
+
+Epoch 222/499
+----------
+train Loss: 0.0065 Acc: 0.9988
+training time: 72356s
+val Loss: 17.4113 Acc: 0.0578
+training time: 72509s
+
+Epoch 223/499
+----------
+train Loss: 0.0056 Acc: 0.9987
+training time: 72669s
+val Loss: 17.6057 Acc: 0.0572
+training time: 72808s
+
+Epoch 224/499
+----------
+train Loss: 0.0053 Acc: 0.9988
+training time: 72967s
+val Loss: 17.4775 Acc: 0.0601
+training time: 73106s
+
+Epoch 225/499
+----------
+train Loss: 0.0054 Acc: 0.9988
+training time: 73263s
+val Loss: 17.5837 Acc: 0.0577
+training time: 73402s
+
+Epoch 226/499
+----------
+train Loss: 0.0056 Acc: 0.9985
+training time: 73561s
+val Loss: 17.4200 Acc: 0.0579
+training time: 73712s
+
+Epoch 227/499
+----------
+train Loss: 0.0053 Acc: 0.9988
+training time: 73885s
+val Loss: 17.8310 Acc: 0.0574
+training time: 74035s
+
+Epoch 228/499
+----------
+train Loss: 0.0060 Acc: 0.9987
+training time: 74205s
+val Loss: 17.8025 Acc: 0.0565
+training time: 74353s
+
+Epoch 229/499
+----------
+train Loss: 0.0069 Acc: 0.9984
+training time: 74512s
+val Loss: 17.5342 Acc: 0.0576
+training time: 74663s
+
+Epoch 230/499
+----------
+train Loss: 0.0061 Acc: 0.9985
+training time: 74837s
+val Loss: 17.7601 Acc: 0.0560
+training time: 74989s
+
+Epoch 231/499
+----------
+train Loss: 0.0067 Acc: 0.9985
+training time: 75155s
+val Loss: 17.6686 Acc: 0.0575
+training time: 75303s
+
+Epoch 232/499
+----------
+train Loss: 0.0063 Acc: 0.9986
+training time: 75469s
+val Loss: 17.8890 Acc: 0.0571
+training time: 75620s
+
+Epoch 233/499
+----------
+train Loss: 0.0062 Acc: 0.9985
+training time: 75793s
+val Loss: 17.9080 Acc: 0.0560
+training time: 75942s
+
+Epoch 234/499
+----------
+train Loss: 0.0062 Acc: 0.9987
+training time: 76101s
+val Loss: 17.6911 Acc: 0.0577
+training time: 76241s
+
+Epoch 235/499
+----------
+train Loss: 0.0058 Acc: 0.9987
+training time: 76401s
+val Loss: 17.6773 Acc: 0.0576
+training time: 76542s
+
+Epoch 236/499
+----------
+train Loss: 0.0052 Acc: 0.9987
+training time: 76713s
+val Loss: 17.6073 Acc: 0.0582
+training time: 76880s
+
+Epoch 237/499
+----------
+train Loss: 0.0057 Acc: 0.9986
+training time: 77051s
+val Loss: 17.5527 Acc: 0.0585
+training time: 77221s
+
+Epoch 238/499
+----------
+train Loss: 0.0054 Acc: 0.9987
+training time: 77395s
+val Loss: 17.7311 Acc: 0.0571
+training time: 77548s
+
+Epoch 239/499
+----------
+train Loss: 0.0064 Acc: 0.9983
+training time: 77727s
+val Loss: 17.9674 Acc: 0.0561
+training time: 77879s
+
+Epoch 240/499
+----------
+train Loss: 0.0056 Acc: 0.9987
+training time: 78046s
+val Loss: 17.9561 Acc: 0.0576
+training time: 78196s
+
+Epoch 241/499
+----------
+train Loss: 0.0064 Acc: 0.9985
+training time: 78373s
+val Loss: 17.5872 Acc: 0.0586
+training time: 78557s
+
+Epoch 242/499
+----------
+train Loss: 0.0057 Acc: 0.9985
+training time: 78746s
+val Loss: 18.1302 Acc: 0.0562
+training time: 78903s
+
+Epoch 243/499
+----------
+train Loss: 0.0054 Acc: 0.9987
+training time: 79086s
+val Loss: 17.6909 Acc: 0.0582
+training time: 79246s
+
+Epoch 244/499
+----------
+train Loss: 0.0051 Acc: 0.9987
+training time: 79430s
+val Loss: 17.7365 Acc: 0.0581
+training time: 79599s
+
+Epoch 245/499
+----------
+train Loss: 0.0058 Acc: 0.9985
+training time: 79781s
+val Loss: 17.7292 Acc: 0.0596
+training time: 79963s
+
+Epoch 246/499
+----------
+train Loss: 0.0060 Acc: 0.9985
+training time: 80156s
+val Loss: 17.8063 Acc: 0.0577
+training time: 80304s
+
+Epoch 247/499
+----------
+train Loss: 0.0053 Acc: 0.9986
+training time: 80461s
+val Loss: 17.9899 Acc: 0.0555
+training time: 80598s
+
+Epoch 248/499
+----------
+train Loss: 0.0049 Acc: 0.9987
+training time: 80753s
+val Loss: 17.6370 Acc: 0.0562
+training time: 80889s
+
+Epoch 249/499
+----------
+train Loss: 0.0050 Acc: 0.9987
+training time: 81043s
+val Loss: 17.7325 Acc: 0.0572
+training time: 81177s
+
+Epoch 250/499
+----------
+train Loss: 0.0046 Acc: 0.9988
+training time: 81335s
+val Loss: 18.0080 Acc: 0.0559
+training time: 81470s
+
+Epoch 251/499
+----------
+train Loss: 0.0054 Acc: 0.9986
+training time: 81624s
+val Loss: 18.2781 Acc: 0.0535
+training time: 81760s
+
+Epoch 252/499
+----------
+train Loss: 0.0056 Acc: 0.9986
+training time: 81917s
+val Loss: 17.7137 Acc: 0.0580
+training time: 82050s
+
+Epoch 253/499
+----------
+train Loss: 0.0052 Acc: 0.9987
+training time: 82206s
+val Loss: 17.9006 Acc: 0.0565
+training time: 82340s
+
+Epoch 254/499
+----------
+train Loss: 0.0050 Acc: 0.9988
+training time: 82493s
+val Loss: 17.6749 Acc: 0.0586
+training time: 82627s
+
+Epoch 255/499
+----------
+train Loss: 0.0045 Acc: 0.9989
+training time: 82783s
+val Loss: 17.5512 Acc: 0.0589
+training time: 82918s
+
+Epoch 256/499
+----------
+train Loss: 0.0042 Acc: 0.9988
+training time: 83074s
+val Loss: 17.8173 Acc: 0.0583
+training time: 83209s
+
+Epoch 257/499
+----------
+train Loss: 0.0049 Acc: 0.9987
+training time: 83366s
+val Loss: 18.2003 Acc: 0.0548
+training time: 83503s
+
+Epoch 258/499
+----------
+train Loss: 0.0048 Acc: 0.9987
+training time: 83659s
+val Loss: 17.9641 Acc: 0.0566
+training time: 83793s
+
+Epoch 259/499
+----------
+train Loss: 0.0045 Acc: 0.9989
+training time: 83948s
+val Loss: 17.8092 Acc: 0.0578
+training time: 84080s
+
+Epoch 260/499
+----------
+train Loss: 0.0045 Acc: 0.9987
+training time: 84235s
+val Loss: 17.8653 Acc: 0.0565
+training time: 84368s
+
+Epoch 261/499
+----------
+train Loss: 0.0043 Acc: 0.9988
+training time: 84524s
+val Loss: 17.8698 Acc: 0.0567
+training time: 84660s
+
+Epoch 262/499
+----------
+train Loss: 0.0050 Acc: 0.9986
+training time: 84815s
+val Loss: 18.1646 Acc: 0.0575
+training time: 84952s
+
+Epoch 263/499
+----------
+train Loss: 0.0056 Acc: 0.9986
+training time: 85117s
+val Loss: 19.0007 Acc: 0.0503
+training time: 85252s
+
+Epoch 264/499
+----------
+train Loss: 0.0044 Acc: 0.9988
+training time: 85408s
+val Loss: 17.7173 Acc: 0.0571
+training time: 85545s
+
+Epoch 265/499
+----------
+train Loss: 0.0042 Acc: 0.9988
+training time: 85702s
+val Loss: 17.7534 Acc: 0.0589
+training time: 85837s
+
+Epoch 266/499
+----------
+train Loss: 0.0043 Acc: 0.9988
+training time: 86004s
+val Loss: 17.7547 Acc: 0.0577
+training time: 86142s
+
+Epoch 267/499
+----------
+train Loss: 0.0038 Acc: 0.9989
+training time: 86298s
+val Loss: 17.7969 Acc: 0.0574
+training time: 86439s
+
+Epoch 268/499
+----------
+train Loss: 0.0047 Acc: 0.9987
+training time: 86596s
+val Loss: 17.9619 Acc: 0.0568
+training time: 86732s
+
+Epoch 269/499
+----------
+train Loss: 0.0042 Acc: 0.9988
+training time: 86888s
+val Loss: 18.1119 Acc: 0.0559
+training time: 87031s
+
+Epoch 270/499
+----------
+train Loss: 0.0044 Acc: 0.9988
+training time: 87188s
+val Loss: 18.1260 Acc: 0.0563
+training time: 87327s
+
+Epoch 271/499
+----------
+train Loss: 0.0044 Acc: 0.9987
+training time: 87490s
+val Loss: 17.9998 Acc: 0.0572
+training time: 87630s
+
+Epoch 272/499
+----------
+train Loss: 0.0040 Acc: 0.9989
+training time: 87787s
+val Loss: 17.9928 Acc: 0.0572
+training time: 87925s
+
+Epoch 273/499
+----------
+train Loss: 0.0041 Acc: 0.9988
+training time: 88082s
+val Loss: 17.8183 Acc: 0.0574
+training time: 88217s
+
+Epoch 274/499
+----------
+train Loss: 0.0044 Acc: 0.9988
+training time: 88371s
+val Loss: 18.0856 Acc: 0.0552
+training time: 88502s
+
+Epoch 275/499
+----------
+train Loss: 0.0046 Acc: 0.9987
+training time: 88654s
+val Loss: 18.1960 Acc: 0.0571
+training time: 88790s
+
+Epoch 276/499
+----------
+train Loss: 0.0040 Acc: 0.9989
+training time: 88944s
+val Loss: 17.7733 Acc: 0.0576
+training time: 89081s
+
+Epoch 277/499
+----------
+train Loss: 0.0040 Acc: 0.9988
+training time: 89247s
+val Loss: 18.0777 Acc: 0.0561
+training time: 89399s
+
+Epoch 278/499
+----------
+train Loss: 0.0045 Acc: 0.9988
+training time: 89557s
+val Loss: 18.1790 Acc: 0.0564
+training time: 89693s
+
+Epoch 279/499
+----------
+train Loss: 0.0045 Acc: 0.9988
+training time: 89849s
+val Loss: 18.0193 Acc: 0.0564
+training time: 89985s
+
+Epoch 280/499
+----------
+train Loss: 0.0041 Acc: 0.9988
+training time: 90141s
+val Loss: 17.9528 Acc: 0.0567
+training time: 90285s
+
+Epoch 281/499
+----------
+train Loss: 0.0043 Acc: 0.9988
+training time: 90441s
+val Loss: 17.9036 Acc: 0.0576
+training time: 90578s
+
+Epoch 282/499
+----------
+train Loss: 0.0041 Acc: 0.9988
+training time: 90734s
+val Loss: 18.0177 Acc: 0.0572
+training time: 90872s
+
+Epoch 283/499
+----------
+train Loss: 0.0051 Acc: 0.9987
+training time: 91027s
+val Loss: 18.4348 Acc: 0.0552
+training time: 91164s
+
+Epoch 284/499
+----------
+train Loss: 0.0051 Acc: 0.9987
+training time: 91321s
+val Loss: 18.0105 Acc: 0.0562
+training time: 91460s
+
+Epoch 285/499
+----------
+train Loss: 0.0041 Acc: 0.9989
+training time: 91618s
+val Loss: 18.1679 Acc: 0.0548
+training time: 91757s
+
+Epoch 286/499
+----------
+train Loss: 0.0043 Acc: 0.9988
+training time: 91916s
+val Loss: 18.1055 Acc: 0.0552
+training time: 92052s
+
+Epoch 287/499
+----------
+train Loss: 0.0050 Acc: 0.9987
+training time: 92208s
+val Loss: 18.4724 Acc: 0.0547
+training time: 92346s
+
+Epoch 288/499
+----------
+train Loss: 0.0053 Acc: 0.9985
+training time: 92504s
+val Loss: 18.0713 Acc: 0.0563
+training time: 92640s
+
+Epoch 289/499
+----------
+train Loss: 0.0050 Acc: 0.9986
+training time: 92797s
+val Loss: 18.5231 Acc: 0.0548
+training time: 92935s
+
+Epoch 290/499
+----------
+train Loss: 0.0046 Acc: 0.9987
+training time: 93092s
+val Loss: 18.5838 Acc: 0.0526
+training time: 93234s
+
+Epoch 291/499
+----------
+train Loss: 0.0049 Acc: 0.9987
+training time: 93392s
+val Loss: 18.3220 Acc: 0.0549
+training time: 93535s
+
+Epoch 292/499
+----------
+train Loss: 0.0048 Acc: 0.9989
+training time: 93690s
+val Loss: 18.1445 Acc: 0.0578
+training time: 93827s
+
+Epoch 293/499
+----------
+train Loss: 0.0052 Acc: 0.9985
+training time: 93984s
+val Loss: 18.1386 Acc: 0.0568
+training time: 94120s
+
+Epoch 294/499
+----------
+train Loss: 0.0044 Acc: 0.9987
+training time: 94278s
+val Loss: 17.8428 Acc: 0.0586
+training time: 94414s
+
+Epoch 295/499
+----------
+train Loss: 0.0044 Acc: 0.9986
+training time: 94571s
+val Loss: 17.8150 Acc: 0.0559
+training time: 94710s
+
+Epoch 296/499
+----------
+train Loss: 0.0042 Acc: 0.9989
+training time: 94868s
+val Loss: 18.1334 Acc: 0.0564
+training time: 95005s
+
+Epoch 297/499
+----------
+train Loss: 0.0044 Acc: 0.9987
+training time: 95163s
+val Loss: 17.9902 Acc: 0.0585
+training time: 95300s
+
+Epoch 298/499
+----------
+train Loss: 0.0040 Acc: 0.9988
+training time: 95457s
+val Loss: 18.3655 Acc: 0.0566
+training time: 95594s
+
+Epoch 299/499
+----------
+train Loss: 0.0040 Acc: 0.9988
+training time: 95749s
+val Loss: 18.0159 Acc: 0.0586
+training time: 95885s
+
+Epoch 300/499
+----------
+train Loss: 0.0037 Acc: 0.9989
+training time: 96043s
+val Loss: 17.9644 Acc: 0.0570
+training time: 96178s
+
+Epoch 301/499
+----------
+train Loss: 0.0038 Acc: 0.9988
+training time: 96335s
+val Loss: 18.1243 Acc: 0.0589
+training time: 96474s
+
+Epoch 302/499
+----------
+train Loss: 0.0038 Acc: 0.9988
+training time: 96632s
+val Loss: 18.0736 Acc: 0.0576
+training time: 96776s
+
+Epoch 303/499
+----------
+train Loss: 0.0041 Acc: 0.9988
+training time: 96934s
+val Loss: 18.1634 Acc: 0.0572
+training time: 97072s
+
+Epoch 304/499
+----------
+train Loss: 0.0039 Acc: 0.9988
+training time: 97227s
+val Loss: 18.7985 Acc: 0.0553
+training time: 97362s
+
+Epoch 305/499
+----------
+train Loss: 0.0041 Acc: 0.9989
+training time: 97516s
+val Loss: 18.0049 Acc: 0.0588
+training time: 97650s
+
+Epoch 306/499
+----------
+train Loss: 0.0038 Acc: 0.9988
+training time: 97802s
+val Loss: 18.1175 Acc: 0.0577
+training time: 97936s
+
+Epoch 307/499
+----------
+train Loss: 0.0043 Acc: 0.9987
+training time: 98087s
+val Loss: 18.1262 Acc: 0.0581
+training time: 98219s
+
+Epoch 308/499
+----------
+train Loss: 0.0037 Acc: 0.9989
+training time: 98372s
+val Loss: 18.1493 Acc: 0.0578
+training time: 98503s
+
+Epoch 309/499
+----------
+train Loss: 0.0037 Acc: 0.9990
+training time: 98657s
+val Loss: 17.9741 Acc: 0.0586
+training time: 98797s
+
+Epoch 310/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 98957s
+val Loss: 17.9881 Acc: 0.0579
+training time: 99100s
+
+Epoch 311/499
+----------
+train Loss: 0.0035 Acc: 0.9989
+training time: 99263s
+val Loss: 18.4025 Acc: 0.0557
+training time: 99404s
+
+Epoch 312/499
+----------
+train Loss: 0.0040 Acc: 0.9988
+training time: 99561s
+val Loss: 18.2073 Acc: 0.0566
+training time: 99709s
+
+Epoch 313/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 99877s
+val Loss: 18.0825 Acc: 0.0577
+training time: 100027s
+
+Epoch 314/499
+----------
+train Loss: 0.0035 Acc: 0.9989
+training time: 100196s
+val Loss: 18.0499 Acc: 0.0585
+training time: 100341s
+
+Epoch 315/499
+----------
+train Loss: 0.0037 Acc: 0.9989
+training time: 100505s
+val Loss: 18.1382 Acc: 0.0559
+training time: 100649s
+
+Epoch 316/499
+----------
+train Loss: 0.0039 Acc: 0.9988
+training time: 100809s
+val Loss: 18.5089 Acc: 0.0565
+training time: 100952s
+
+Epoch 317/499
+----------
+train Loss: 0.0036 Acc: 0.9988
+training time: 101121s
+val Loss: 18.1839 Acc: 0.0589
+training time: 101271s
+
+Epoch 318/499
+----------
+train Loss: 0.0037 Acc: 0.9988
+training time: 101445s
+val Loss: 18.0161 Acc: 0.0578
+training time: 101596s
+
+Epoch 319/499
+----------
+train Loss: 0.0036 Acc: 0.9988
+training time: 101762s
+val Loss: 18.0379 Acc: 0.0586
+training time: 101902s
+
+Epoch 320/499
+----------
+train Loss: 0.0039 Acc: 0.9987
+training time: 102060s
+val Loss: 18.0207 Acc: 0.0577
+training time: 102200s
+
+Epoch 321/499
+----------
+train Loss: 0.0039 Acc: 0.9988
+training time: 102355s
+val Loss: 18.1781 Acc: 0.0568
+training time: 102492s
+
+Epoch 322/499
+----------
+train Loss: 0.0040 Acc: 0.9987
+training time: 102649s
+val Loss: 18.4322 Acc: 0.0565
+training time: 102795s
+
+Epoch 323/499
+----------
+train Loss: 0.0042 Acc: 0.9988
+training time: 102968s
+val Loss: 18.2147 Acc: 0.0562
+training time: 103131s
+
+Epoch 324/499
+----------
+train Loss: 0.0040 Acc: 0.9987
+training time: 103315s
+val Loss: 18.4178 Acc: 0.0553
+training time: 103482s
+
+Epoch 325/499
+----------
+train Loss: 0.0044 Acc: 0.9988
+training time: 103675s
+val Loss: 18.0939 Acc: 0.0569
+training time: 103847s
+
+Epoch 326/499
+----------
+train Loss: 0.0039 Acc: 0.9989
+training time: 104044s
+val Loss: 18.1666 Acc: 0.0579
+training time: 104224s
+
+Epoch 327/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 104420s
+val Loss: 18.2147 Acc: 0.0564
+training time: 104596s
+
+Epoch 328/499
+----------
+train Loss: 0.0037 Acc: 0.9989
+training time: 104794s
+val Loss: 18.2908 Acc: 0.0563
+training time: 104968s
+
+Epoch 329/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 105155s
+val Loss: 18.4420 Acc: 0.0553
+training time: 105320s
+
+Epoch 330/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 105509s
+val Loss: 18.2681 Acc: 0.0552
+training time: 105675s
+
+Epoch 331/499
+----------
+train Loss: 0.0037 Acc: 0.9989
+training time: 105864s
+val Loss: 18.0909 Acc: 0.0571
+training time: 106033s
+
+Epoch 332/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 106221s
+val Loss: 18.2392 Acc: 0.0573
+training time: 106398s
+
+Epoch 333/499
+----------
+train Loss: 0.0036 Acc: 0.9988
+training time: 106582s
+val Loss: 18.3278 Acc: 0.0561
+training time: 106741s
+
+Epoch 334/499
+----------
+train Loss: 0.0040 Acc: 0.9988
+training time: 106905s
+val Loss: 18.1262 Acc: 0.0581
+training time: 107056s
+
+Epoch 335/499
+----------
+train Loss: 0.0037 Acc: 0.9988
+training time: 107224s
+val Loss: 18.2125 Acc: 0.0565
+training time: 107372s
+
+Epoch 336/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 107537s
+val Loss: 18.2744 Acc: 0.0578
+training time: 107687s
+
+Epoch 337/499
+----------
+train Loss: 0.0041 Acc: 0.9987
+training time: 107855s
+val Loss: 18.2542 Acc: 0.0569
+training time: 108003s
+
+Epoch 338/499
+----------
+train Loss: 0.0039 Acc: 0.9987
+training time: 108174s
+val Loss: 18.4813 Acc: 0.0565
+training time: 108327s
+
+Epoch 339/499
+----------
+train Loss: 0.0033 Acc: 0.9990
+training time: 108516s
+val Loss: 18.1564 Acc: 0.0577
+training time: 108671s
+
+Epoch 340/499
+----------
+train Loss: 0.0036 Acc: 0.9989
+training time: 108843s
+val Loss: 18.5661 Acc: 0.0554
+training time: 109001s
+
+Epoch 341/499
+----------
+train Loss: 0.0037 Acc: 0.9988
+training time: 109172s
+val Loss: 18.2215 Acc: 0.0578
+training time: 109325s
+
+Epoch 342/499
+----------
+train Loss: 0.0035 Acc: 0.9989
+training time: 109486s
+val Loss: 18.1997 Acc: 0.0581
+training time: 109628s
+
+Epoch 343/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 109791s
+val Loss: 18.2088 Acc: 0.0569
+training time: 109937s
+
+Epoch 344/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 110099s
+val Loss: 18.1898 Acc: 0.0583
+training time: 110251s
+
+Epoch 345/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 110425s
+val Loss: 18.1955 Acc: 0.0570
+training time: 110569s
+
+Epoch 346/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 110735s
+val Loss: 18.1038 Acc: 0.0578
+training time: 110882s
+
+Epoch 347/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 111050s
+val Loss: 18.2820 Acc: 0.0574
+training time: 111199s
+
+Epoch 348/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 111369s
+val Loss: 18.2323 Acc: 0.0557
+training time: 111515s
+
+Epoch 349/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 111678s
+val Loss: 18.2936 Acc: 0.0563
+training time: 111823s
+
+Epoch 350/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 111990s
+val Loss: 18.5951 Acc: 0.0548
+training time: 112144s
+
+Epoch 351/499
+----------
+train Loss: 0.0036 Acc: 0.9988
+training time: 112310s
+val Loss: 18.3665 Acc: 0.0567
+training time: 112455s
+
+Epoch 352/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 112625s
+val Loss: 18.2361 Acc: 0.0578
+training time: 112775s
+
+Epoch 353/499
+----------
+train Loss: 0.0034 Acc: 0.9987
+training time: 112939s
+val Loss: 18.4841 Acc: 0.0566
+training time: 113086s
+
+Epoch 354/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 113255s
+val Loss: 18.3083 Acc: 0.0572
+training time: 113401s
+
+Epoch 355/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 113569s
+val Loss: 18.4155 Acc: 0.0560
+training time: 113718s
+
+Epoch 356/499
+----------
+train Loss: 0.0035 Acc: 0.9989
+training time: 113884s
+val Loss: 18.4787 Acc: 0.0580
+training time: 114027s
+
+Epoch 357/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 114193s
+val Loss: 18.2691 Acc: 0.0570
+training time: 114347s
+
+Epoch 358/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 114512s
+val Loss: 18.2605 Acc: 0.0576
+training time: 114658s
+
+Epoch 359/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 114823s
+val Loss: 18.5157 Acc: 0.0561
+training time: 114972s
+
+Epoch 360/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 115140s
+val Loss: 18.6372 Acc: 0.0565
+training time: 115291s
+
+Epoch 361/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 115458s
+val Loss: 18.2715 Acc: 0.0578
+training time: 115604s
+
+Epoch 362/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 115774s
+val Loss: 18.6019 Acc: 0.0561
+training time: 115934s
+
+Epoch 363/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 116103s
+val Loss: 18.4702 Acc: 0.0573
+training time: 116250s
+
+Epoch 364/499
+----------
+train Loss: 0.0040 Acc: 0.9987
+training time: 116408s
+val Loss: 18.1399 Acc: 0.0584
+training time: 116549s
+
+Epoch 365/499
+----------
+train Loss: 0.0041 Acc: 0.9987
+training time: 116707s
+val Loss: 18.2725 Acc: 0.0586
+training time: 116845s
+
+Epoch 366/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 117000s
+val Loss: 18.4135 Acc: 0.0563
+training time: 117139s
+
+Epoch 367/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 117297s
+val Loss: 18.4914 Acc: 0.0575
+training time: 117435s
+
+Epoch 368/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 117593s
+val Loss: 18.4761 Acc: 0.0558
+training time: 117731s
+
+Epoch 369/499
+----------
+train Loss: 0.0045 Acc: 0.9985
+training time: 117890s
+val Loss: 18.7217 Acc: 0.0557
+training time: 118035s
+
+Epoch 370/499
+----------
+train Loss: 0.0048 Acc: 0.9985
+training time: 118190s
+val Loss: 18.4682 Acc: 0.0543
+training time: 118328s
+
+Epoch 371/499
+----------
+train Loss: 0.0043 Acc: 0.9986
+training time: 118484s
+val Loss: 18.4916 Acc: 0.0551
+training time: 118619s
+
+Epoch 372/499
+----------
+train Loss: 0.0036 Acc: 0.9989
+training time: 118777s
+val Loss: 18.6061 Acc: 0.0549
+training time: 118912s
+
+Epoch 373/499
+----------
+train Loss: 0.0033 Acc: 0.9990
+training time: 119070s
+val Loss: 18.6250 Acc: 0.0557
+training time: 119213s
+
+Epoch 374/499
+----------
+train Loss: 0.0036 Acc: 0.9989
+training time: 119373s
+val Loss: 18.5142 Acc: 0.0567
+training time: 119514s
+
+Epoch 375/499
+----------
+train Loss: 0.0032 Acc: 0.9990
+training time: 119676s
+val Loss: 18.3678 Acc: 0.0565
+training time: 119817s
+
+Epoch 376/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 119975s
+val Loss: 18.5335 Acc: 0.0566
+training time: 120108s
+
+Epoch 377/499
+----------
+train Loss: 0.0030 Acc: 0.9990
+training time: 120260s
+val Loss: 18.6834 Acc: 0.0556
+training time: 120394s
+
+Epoch 378/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 120543s
+val Loss: 18.3551 Acc: 0.0565
+training time: 120671s
+
+Epoch 379/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 120820s
+val Loss: 18.3968 Acc: 0.0571
+training time: 120951s
+
+Epoch 380/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 121099s
+val Loss: 18.4193 Acc: 0.0589
+training time: 121234s
+
+Epoch 381/499
+----------
+train Loss: 0.0030 Acc: 0.9990
+training time: 121392s
+val Loss: 18.4327 Acc: 0.0569
+training time: 121525s
+
+Epoch 382/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 121678s
+val Loss: 18.4319 Acc: 0.0575
+training time: 121813s
+
+Epoch 383/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 121972s
+val Loss: 18.5747 Acc: 0.0574
+training time: 122111s
+
+Epoch 384/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 122270s
+val Loss: 18.3984 Acc: 0.0586
+training time: 122408s
+
+Epoch 385/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 122572s
+val Loss: 18.4735 Acc: 0.0574
+training time: 122717s
+
+Epoch 386/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 122876s
+val Loss: 18.4569 Acc: 0.0569
+training time: 123020s
+
+Epoch 387/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 123177s
+val Loss: 18.5433 Acc: 0.0580
+training time: 123321s
+
+Epoch 388/499
+----------
+train Loss: 0.0030 Acc: 0.9990
+training time: 123478s
+val Loss: 18.4565 Acc: 0.0567
+training time: 123617s
+
+Epoch 389/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 123775s
+val Loss: 18.3429 Acc: 0.0577
+training time: 123916s
+
+Epoch 390/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 124072s
+val Loss: 18.4757 Acc: 0.0563
+training time: 124207s
+
+Epoch 391/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 124364s
+val Loss: 18.6008 Acc: 0.0570
+training time: 124503s
+
+Epoch 392/499
+----------
+train Loss: 0.0035 Acc: 0.9990
+training time: 124663s
+val Loss: 18.4067 Acc: 0.0568
+training time: 124799s
+
+Epoch 393/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 124956s
+val Loss: 18.4377 Acc: 0.0568
+training time: 125097s
+
+Epoch 394/499
+----------
+train Loss: 0.0043 Acc: 0.9987
+training time: 125263s
+val Loss: 19.1698 Acc: 0.0538
+training time: 125412s
+
+Epoch 395/499
+----------
+train Loss: 0.0037 Acc: 0.9988
+training time: 125569s
+val Loss: 18.6738 Acc: 0.0558
+training time: 125707s
+
+Epoch 396/499
+----------
+train Loss: 0.0038 Acc: 0.9987
+training time: 125867s
+val Loss: 18.5196 Acc: 0.0567
+training time: 126006s
+
+Epoch 397/499
+----------
+train Loss: 0.0037 Acc: 0.9988
+training time: 126166s
+val Loss: 18.4677 Acc: 0.0571
+training time: 126305s
+
+Epoch 398/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 126463s
+val Loss: 18.6055 Acc: 0.0564
+training time: 126602s
+
+Epoch 399/499
+----------
+train Loss: 0.0034 Acc: 0.9988
+training time: 126761s
+val Loss: 19.0853 Acc: 0.0564
+training time: 126902s
+
+Epoch 400/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 127060s
+val Loss: 18.5292 Acc: 0.0570
+training time: 127200s
+
+Epoch 401/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 127362s
+val Loss: 18.6970 Acc: 0.0553
+training time: 127512s
+
+Epoch 402/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 127675s
+val Loss: 18.5102 Acc: 0.0567
+training time: 127820s
+
+Epoch 403/499
+----------
+train Loss: 0.0036 Acc: 0.9988
+training time: 127983s
+val Loss: 18.6203 Acc: 0.0583
+training time: 128127s
+
+Epoch 404/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 128289s
+val Loss: 18.4646 Acc: 0.0578
+training time: 128432s
+
+Epoch 405/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 128596s
+val Loss: 18.5435 Acc: 0.0580
+training time: 128743s
+
+Epoch 406/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 128910s
+val Loss: 18.4322 Acc: 0.0583
+training time: 129055s
+
+Epoch 407/499
+----------
+train Loss: 0.0032 Acc: 0.9990
+training time: 129216s
+val Loss: 18.5455 Acc: 0.0570
+training time: 129356s
+
+Epoch 408/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 129513s
+val Loss: 18.5510 Acc: 0.0570
+training time: 129659s
+
+Epoch 409/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 129822s
+val Loss: 18.6062 Acc: 0.0557
+training time: 129959s
+
+Epoch 410/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 130118s
+val Loss: 18.4812 Acc: 0.0571
+training time: 130261s
+
+Epoch 411/499
+----------
+train Loss: 0.0035 Acc: 0.9989
+training time: 130419s
+val Loss: 18.5587 Acc: 0.0578
+training time: 130560s
+
+Epoch 412/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 130721s
+val Loss: 18.5688 Acc: 0.0561
+training time: 130862s
+
+Epoch 413/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 131022s
+val Loss: 18.5281 Acc: 0.0568
+training time: 131164s
+
+Epoch 414/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 131325s
+val Loss: 18.5690 Acc: 0.0563
+training time: 131470s
+
+Epoch 415/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 131628s
+val Loss: 18.6000 Acc: 0.0574
+training time: 131773s
+
+Epoch 416/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 131934s
+val Loss: 18.6440 Acc: 0.0574
+training time: 132087s
+
+Epoch 417/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 132252s
+val Loss: 18.6784 Acc: 0.0565
+training time: 132403s
+
+Epoch 418/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 132569s
+val Loss: 18.5749 Acc: 0.0569
+training time: 132717s
+
+Epoch 419/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 132882s
+val Loss: 18.6227 Acc: 0.0562
+training time: 133040s
+
+Epoch 420/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 133207s
+val Loss: 18.5783 Acc: 0.0571
+training time: 133360s
+
+Epoch 421/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 133527s
+val Loss: 18.5090 Acc: 0.0575
+training time: 133674s
+
+Epoch 422/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 133839s
+val Loss: 18.6133 Acc: 0.0571
+training time: 133981s
+
+Epoch 423/499
+----------
+train Loss: 0.0029 Acc: 0.9988
+training time: 134141s
+val Loss: 18.6005 Acc: 0.0570
+training time: 134286s
+
+Epoch 424/499
+----------
+train Loss: 0.0032 Acc: 0.9987
+training time: 134445s
+val Loss: 18.9174 Acc: 0.0562
+training time: 134591s
+
+Epoch 425/499
+----------
+train Loss: 0.0035 Acc: 0.9988
+training time: 134752s
+val Loss: 18.9041 Acc: 0.0565
+training time: 134898s
+
+Epoch 426/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 135063s
+val Loss: 18.6564 Acc: 0.0571
+training time: 135212s
+
+Epoch 427/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 135378s
+val Loss: 18.6233 Acc: 0.0581
+training time: 135528s
+
+Epoch 428/499
+----------
+train Loss: 0.0029 Acc: 0.9990
+training time: 135694s
+val Loss: 18.7185 Acc: 0.0560
+training time: 135841s
+
+Epoch 429/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 136002s
+val Loss: 18.6199 Acc: 0.0570
+training time: 136149s
+
+Epoch 430/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 136316s
+val Loss: 18.5803 Acc: 0.0568
+training time: 136470s
+
+Epoch 431/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 136637s
+val Loss: 18.6149 Acc: 0.0563
+training time: 136792s
+
+Epoch 432/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 136960s
+val Loss: 18.7700 Acc: 0.0572
+training time: 137116s
+
+Epoch 433/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 137280s
+val Loss: 18.6284 Acc: 0.0572
+training time: 137425s
+
+Epoch 434/499
+----------
+train Loss: 0.0028 Acc: 0.9991
+training time: 137583s
+val Loss: 18.5849 Acc: 0.0575
+training time: 137721s
+
+Epoch 435/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 137886s
+val Loss: 18.7582 Acc: 0.0563
+training time: 138029s
+
+Epoch 436/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 138187s
+val Loss: 18.7027 Acc: 0.0571
+training time: 138330s
+
+Epoch 437/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 138491s
+val Loss: 18.6726 Acc: 0.0568
+training time: 138636s
+
+Epoch 438/499
+----------
+train Loss: 0.0030 Acc: 0.9990
+training time: 138797s
+val Loss: 18.7319 Acc: 0.0569
+training time: 138946s
+
+Epoch 439/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 139105s
+val Loss: 19.1462 Acc: 0.0558
+training time: 139244s
+
+Epoch 440/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 139401s
+val Loss: 18.9170 Acc: 0.0565
+training time: 139543s
+
+Epoch 441/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 139702s
+val Loss: 18.6121 Acc: 0.0565
+training time: 139845s
+
+Epoch 442/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 140003s
+val Loss: 19.1925 Acc: 0.0552
+training time: 140144s
+
+Epoch 443/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 140297s
+val Loss: 18.6240 Acc: 0.0566
+training time: 140430s
+
+Epoch 444/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 140582s
+val Loss: 18.9411 Acc: 0.0563
+training time: 140715s
+
+Epoch 445/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 140869s
+val Loss: 18.6664 Acc: 0.0575
+training time: 141004s
+
+Epoch 446/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 141156s
+val Loss: 18.6649 Acc: 0.0565
+training time: 141288s
+
+Epoch 447/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 141445s
+val Loss: 18.6037 Acc: 0.0568
+training time: 141581s
+
+Epoch 448/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 141736s
+val Loss: 18.6800 Acc: 0.0563
+training time: 141876s
+
+Epoch 449/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 142030s
+val Loss: 18.7487 Acc: 0.0571
+training time: 142168s
+
+Epoch 450/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 142317s
+val Loss: 18.8105 Acc: 0.0575
+training time: 142454s
+
+Epoch 451/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 142603s
+val Loss: 18.7599 Acc: 0.0564
+training time: 142742s
+
+Epoch 452/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 142894s
+val Loss: 18.7213 Acc: 0.0565
+training time: 143029s
+
+Epoch 453/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 143180s
+val Loss: 18.8127 Acc: 0.0566
+training time: 143311s
+
+Epoch 454/499
+----------
+train Loss: 0.0031 Acc: 0.9989
+training time: 143463s
+val Loss: 18.6816 Acc: 0.0565
+training time: 143597s
+
+Epoch 455/499
+----------
+train Loss: 0.0030 Acc: 0.9988
+training time: 143745s
+val Loss: 18.7836 Acc: 0.0560
+training time: 143878s
+
+Epoch 456/499
+----------
+train Loss: 0.0030 Acc: 0.9988
+training time: 144030s
+val Loss: 18.7988 Acc: 0.0561
+training time: 144163s
+
+Epoch 457/499
+----------
+train Loss: 0.0030 Acc: 0.9990
+training time: 144315s
+val Loss: 18.9555 Acc: 0.0545
+training time: 144452s
+
+Epoch 458/499
+----------
+train Loss: 0.0031 Acc: 0.9990
+training time: 144606s
+val Loss: 18.8697 Acc: 0.0561
+training time: 144739s
+
+Epoch 459/499
+----------
+train Loss: 0.0029 Acc: 0.9988
+training time: 144892s
+val Loss: 18.7639 Acc: 0.0566
+training time: 145026s
+
+Epoch 460/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 145181s
+val Loss: 18.7179 Acc: 0.0570
+training time: 145315s
+
+Epoch 461/499
+----------
+train Loss: 0.0030 Acc: 0.9989
+training time: 145471s
+val Loss: 18.7653 Acc: 0.0570
+training time: 145616s
+
+Epoch 462/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 145773s
+val Loss: 18.8637 Acc: 0.0569
+training time: 145913s
+
+Epoch 463/499
+----------
+train Loss: 0.0028 Acc: 0.9988
+training time: 146070s
+val Loss: 18.6058 Acc: 0.0575
+training time: 146212s
+
+Epoch 464/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 146375s
+val Loss: 18.7210 Acc: 0.0566
+training time: 146522s
+
+Epoch 465/499
+----------
+train Loss: 0.0025 Acc: 0.9990
+training time: 146681s
+val Loss: 18.6888 Acc: 0.0575
+training time: 146821s
+
+Epoch 466/499
+----------
+train Loss: 0.0029 Acc: 0.9988
+training time: 146979s
+val Loss: 18.8395 Acc: 0.0570
+training time: 147126s
+
+Epoch 467/499
+----------
+train Loss: 0.0025 Acc: 0.9989
+training time: 147289s
+val Loss: 18.8630 Acc: 0.0575
+training time: 147431s
+
+Epoch 468/499
+----------
+train Loss: 0.0026 Acc: 0.9990
+training time: 147588s
+val Loss: 18.7870 Acc: 0.0574
+training time: 147734s
+
+Epoch 469/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 147898s
+val Loss: 18.8675 Acc: 0.0567
+training time: 148039s
+
+Epoch 470/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 148198s
+val Loss: 18.7760 Acc: 0.0574
+training time: 148344s
+
+Epoch 471/499
+----------
+train Loss: 0.0026 Acc: 0.9991
+training time: 148508s
+val Loss: 18.7878 Acc: 0.0565
+training time: 148650s
+
+Epoch 472/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 148808s
+val Loss: 18.7874 Acc: 0.0571
+training time: 148963s
+
+Epoch 473/499
+----------
+train Loss: 0.0027 Acc: 0.9989
+training time: 149128s
+val Loss: 18.8629 Acc: 0.0558
+training time: 149270s
+
+Epoch 474/499
+----------
+train Loss: 0.0029 Acc: 0.9989
+training time: 149427s
+val Loss: 18.6944 Acc: 0.0573
+training time: 149569s
+
+Epoch 475/499
+----------
+train Loss: 0.0033 Acc: 0.9988
+training time: 149733s
+val Loss: 19.0001 Acc: 0.0573
+training time: 149875s
+
+Epoch 476/499
+----------
+train Loss: 0.0029 Acc: 0.9988
+training time: 150033s
+val Loss: 18.7769 Acc: 0.0576
+training time: 150172s
+
+Epoch 477/499
+----------
+train Loss: 0.0027 Acc: 0.9990
+training time: 150335s
+val Loss: 18.8037 Acc: 0.0566
+training time: 150477s
+
+Epoch 478/499
+----------
+train Loss: 0.0029 Acc: 0.9990
+training time: 150635s
+val Loss: 18.8979 Acc: 0.0579
+training time: 150772s
+
+Epoch 479/499
+----------
+train Loss: 0.0029 Acc: 0.9990
+training time: 150930s
+val Loss: 18.8106 Acc: 0.0562
+training time: 151090s
+
+Epoch 480/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 151272s
+val Loss: 19.3240 Acc: 0.0560
+training time: 151431s
+
+Epoch 481/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 151610s
+val Loss: 18.8670 Acc: 0.0570
+training time: 151776s
+
+Epoch 482/499
+----------
+train Loss: 0.0030 Acc: 0.9988
+training time: 151959s
+val Loss: 19.0105 Acc: 0.0569
+training time: 152125s
+
+Epoch 483/499
+----------
+train Loss: 0.0032 Acc: 0.9988
+training time: 152307s
+val Loss: 18.8580 Acc: 0.0564
+training time: 152479s
+
+Epoch 484/499
+----------
+train Loss: 0.0029 Acc: 0.9988
+training time: 152670s
+val Loss: 18.8607 Acc: 0.0567
+training time: 152840s
+
+Epoch 485/499
+----------
+train Loss: 0.0032 Acc: 0.9989
+training time: 153021s
+val Loss: 18.8998 Acc: 0.0566
+training time: 153182s
+
+Epoch 486/499
+----------
+train Loss: 0.0031 Acc: 0.9988
+training time: 153368s
+val Loss: 19.0136 Acc: 0.0549
+training time: 153542s
+
+Epoch 487/499
+----------
+train Loss: 0.0026 Acc: 0.9990
+training time: 153724s
+val Loss: 18.9499 Acc: 0.0564
+training time: 153886s
+
+Epoch 488/499
+----------
+train Loss: 0.0027 Acc: 0.9989
+training time: 154074s
+val Loss: 19.3805 Acc: 0.0551
+training time: 154245s
+
+Epoch 489/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 154429s
+val Loss: 18.8997 Acc: 0.0568
+training time: 154592s
+
+Epoch 490/499
+----------
+train Loss: 0.0027 Acc: 0.9989
+training time: 154772s
+val Loss: 18.8117 Acc: 0.0562
+training time: 154932s
+
+Epoch 491/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 155113s
+val Loss: 18.8834 Acc: 0.0565
+training time: 155273s
+
+Epoch 492/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 155450s
+val Loss: 18.8898 Acc: 0.0562
+training time: 155607s
+
+Epoch 493/499
+----------
+train Loss: 0.0028 Acc: 0.9988
+training time: 155789s
+val Loss: 18.8555 Acc: 0.0570
+training time: 155956s
+
+Epoch 494/499
+----------
+train Loss: 0.0023 Acc: 0.9991
+training time: 156136s
+val Loss: 18.9205 Acc: 0.0570
+training time: 156288s
+
+Epoch 495/499
+----------
+train Loss: 0.0028 Acc: 0.9990
+training time: 156466s
+val Loss: 18.8454 Acc: 0.0559
+training time: 156630s
+
+Epoch 496/499
+----------
+train Loss: 0.0028 Acc: 0.9989
+training time: 156809s
+val Loss: 18.9897 Acc: 0.0565
+training time: 156964s
+
+Epoch 497/499
+----------
+train Loss: 0.0033 Acc: 0.9989
+training time: 157137s
+val Loss: 21.0647 Acc: 0.0467
+training time: 157301s
+
+Epoch 498/499
+----------
+train Loss: 0.0043 Acc: 0.9986
+training time: 157487s
+val Loss: 19.1124 Acc: 0.0551
+training time: 157650s
+
+Epoch 499/499
+----------
+train Loss: 0.0034 Acc: 0.9989
+training time: 157827s
+val Loss: 19.0998 Acc: 0.0543
+training time: 157979s
+
+Training complete in 2632m 59s
+Best val Acc: 0.090891
+Traceback (most recent call last):
+  File "190509_main_vgg_AEbased_FreeH4.py", line 454, in <module>
+    model_ft, hist = train_model(model_ft, dataloaders, criterion, optimizer_ft, num_epochs=num_epochs, is_inception=(model_name=="inception"))
+  File "190509_main_vgg_AEbased_FreeH4.py", line 397, in train_model
+    model.load_state_dict(best_model_wts)
+NameError: name 'best_model_wts' is not defined
