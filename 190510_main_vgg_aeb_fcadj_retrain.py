@@ -65,26 +65,20 @@ else:
     sys.stdout.write('Warning, CPU mode, pls check')
 
 def image_loader(path, batch_size):
-    transform = {
-        'train':transforms.Compose([
-            transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
-            transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(10),
-            transforms.RandomAffine(10),
-            transforms.RandomResizedCrop(size=96,scale=(0.9, 1.0)),
+    transform = transforms.Compose(
+        [
+            #transforms.Resize(input_size),
+            #transforms.CenterCrop(input_size),
+            # use model fitted with the image size, so no need to resize
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-        ]),
-        'val':transforms.Compose([
-            #transforms.Resize(96),
-            #transforms.CenterCrop(224),
-            transforms.ToTensor(),
-            transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-        ])
-    }
-    sup_train_data = datasets.ImageFolder('{}/{}/train'.format(path, 'supervised'), transform=transform['train'])
-    sup_val_data = datasets.ImageFolder('{}/{}/val'.format(path, 'supervised'), transform=transform['val'])
-    unsup_data = datasets.ImageFolder('{}/{}/'.format(path, 'unsupervised'), transform=transform['val'])
+            # https://pytorch.org/docs/stable/torchvision/transforms.html
+            # [mean],[std] for different channels
+        ]
+    )
+    sup_train_data = datasets.ImageFolder('{}/{}/train'.format(path, 'supervised'), transform=transform)
+    sup_val_data = datasets.ImageFolder('{}/{}/val'.format(path, 'supervised'), transform=transform)
+    unsup_data = datasets.ImageFolder('{}/{}/'.format(path, 'unsupervised'), transform=transform)
     # source code: https://github.com/pytorch/vision/blob/master/torchvision/datasets/folder.py
     # Main idea:
     data_loader_sup_train = torch.utils.data.DataLoader(
@@ -121,7 +115,7 @@ def set_parameter_requires_grad(model, feature_extracting):
 
 
 
-def initialize_model(model_name, num_classes, feature_extract, use_pretrained=True):
+def initialize_model(model_name, num_classes, feature_extract, use_pretrained=False):
     # Initialize these variables which will be set in this if statement. Each of these
     #   variables is model specific.
     model_ft = None
@@ -244,7 +238,7 @@ def train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_ince
 
 ####### make sure model and input size
 
-model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained=True)
+model_ft, input_size = initialize_model(model_name, num_classes, feature_extract, use_pretrained=False)
 
 model_ft = torch.load(args.model_folder+args.model_file)
 
