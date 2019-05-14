@@ -143,9 +143,10 @@ class CDAutoEncoder(nn.Module):
                 nn.BatchNorm2d(output_size, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True),
                 nn.ReLU(inplace=True),
                 nn.ConvTranspose2d(output_size, input_size, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)),
+                # How about unpool + conv, conve + pool ??
                 nn.BatchNorm2d(input_size, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True),
                 nn.ReLU(inplace=True)
-            )
+            ) # try unpool + conv vs. conv + pool. better, in future, try what and where, more info can be added.
         if conv_num == 1:
             self.forward_pass = nn.Sequential(
                 nn.Conv2d(input_size, output_size, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1)),
