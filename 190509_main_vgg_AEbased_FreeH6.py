@@ -419,8 +419,6 @@ model_ft = AE_Transfered_Network('vgg',model_ae)
 
 del model_ae #save memory
 
-set_parameter_pin_grad(model_ft.features,False)# confirm free all first
-
 set_parameter_pin_grad(model_ft.features[:8],feature_pinning)
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

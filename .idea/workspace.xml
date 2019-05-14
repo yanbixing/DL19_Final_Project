@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_alexnet_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_densenet_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_inception_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_resnet_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_squeezenet_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190421_run_main_raw_vgg_pfm.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190422_run_main_vgg_alladj.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190422_run_main_vgg_fcadj.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190425_run_main_raw_vggae_en_pretrained.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190425_run_main_raw_vggae_en_pretrained_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190425_run_main_raw_vggae_fromscratch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190425_run_main_raw_vggae_fromscratch_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n10pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n20pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_dn_vggae_fromscratch_n30pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_vgg_dnencoder_20pc_feature.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_vgg_dnencoder_feature.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190427_run_main_vgg_encoder_feature_2_lr0005_mom07.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n00pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n10pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small_lr001.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n20pc_small_lr01.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190501_run_main_Sdn_vggae_fromscratch_n30pc_small.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190502_data_augmentation_densenet.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/190502_data_augmentation_densenet.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/190502_run_main_densenet_daug_from_scratch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190502_run_main_densenet_daug_pretrained.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190502_run_main_densenet_nodaug_from_scratch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190504_run_main_SDvggAE.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190504_run_main_SDvggAE_001.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190504_run_main_vgg_alladj_daug.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190505_run_main_SDvggAE_retrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr005.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190505_run_main_SDvggAE_retrain_lr02.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190505_run_main_vgg_AEbased.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190506_run_main_densenet161_fscr_hflip.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190506_run_main_densenet_fscr_hflip.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190507_run_main_densenet_daug_from_scratch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190508_run_main_densenet_fscr_ForZexi.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_AEbased_FH2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_AEbased_FH4.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_AEbased_FH6.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_AEbased_retrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_fscr.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190509_run_main_vgg_fscr_daug.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190510_main_vgg_fcadj_daug_retrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/190510_main_vgg_aeb_fcadj_daug_retrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/190510_main_vgg_fcadj_retrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/190510_main_vgg_aeb_fcadj_retrain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/190510_run_main_vgg_fcadj_daug_retrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/190510_run_main_vgg_fcadj_retrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note_190421_clean_version.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Note_190421_clean_version.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note_190422.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Note_190422.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note_190502_'Real' stacked autoencoder.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Note_190502_'Real' stacked autoencoder.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note_190504_Self_SAE.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Note_190504_Self_SAE.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note_Model_study.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Note_Model_study.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-1012777.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-1012779.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-1037217.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844412.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844579.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844580.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844608.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844609.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-844610.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-860539.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-860540.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-906243.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-906244.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-922586.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-933250.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-939534.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-939535.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-939548.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-995068.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-995085.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-997831.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-997832.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-997833.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-997834.out" beforeDir="false" />
-    </list>
+    <list default="true" id="33c2b22d-3489-43ef-acc2-7898a8964f3c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +20,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_retrain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="63" selection-start-line="63" selection-end-line="67" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_FreeH6.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4588">
+              <caret line="421" selection-start-line="421" selection-end-line="421" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/190510_main_vgg_aeb_fcadj_daug_retrain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="1468">
               <caret line="123" column="75" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="75" />
             </state>
           </provider>
@@ -127,14 +65,9 @@
         <entry file="file://$PROJECT_DIR$/190509_main_vgg_fscr_daug.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1286">
-              <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+              <caret line="169" selection-start-line="169" selection-end-line="169" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Note_190421_clean_version.ipynb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -144,16 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="77" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Note_190502_'Real' stacked autoencoder.ipynb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -166,16 +104,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Note_190425_Parallel_AE.ipynb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Note_190426_Summary1.ipynb">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -208,9 +136,9 @@
       <find>best_m</find>
       <find>check</find>
       <find>model.load</find>
-      <find>pretrain</find>
       <find>pretr</find>
       <find>pretra</find>
+      <find>pretrain</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -344,9 +272,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="222" y="23" width="1162" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.41875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,7 +284,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33138686" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,9 +295,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Note_190502_'Real' stacked autoencoder.ipynb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Note_190504_Self_SAE.ipynb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -575,16 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_retrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="63" selection-start-line="63" selection-end-line="67" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190504_run_main_vgg_alladj_daug.s">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -640,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_FreeH6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="421" selection-start-line="421" selection-end-line="421" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190422_main_vgg_alladj.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1378">
@@ -686,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/190510_main_vgg_aeb_fcadj_daug_retrain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="123" column="75" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/190509_main_vgg_fscr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -706,7 +606,7 @@
     <entry file="file://$PROJECT_DIR$/190509_main_vgg_fscr_daug.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1286">
-          <caret line="169" lean-forward="true" selection-start-line="169" selection-end-line="169" />
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
         </state>
       </provider>
     </entry>
@@ -718,10 +618,37 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="77" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Note_190502_'Real' stacked autoencoder.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190510_main_vgg_aeb_fcadj_daug_retrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1468">
+          <caret line="123" column="75" selection-start-line="123" selection-start-column="67" selection-end-line="123" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_retrain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="63" selection-start-line="63" selection-end-line="67" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/190509_main_vgg_AEbased_FreeH6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4588">
+          <caret line="421" selection-start-line="421" selection-end-line="421" selection-end-column="71" />
         </state>
       </provider>
     </entry>
